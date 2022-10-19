@@ -1,0 +1,17 @@
+
+.index-first {
+  padding-top: var(--header-height);
+  padding-bottom: 251px;
+
+  background-position: top left;
+  background-size: cover;
+  border-bottom: solid 1px var(--color-c);
+  &__box {
+    display: grid;
+
+    grid-template-columns: 500px 1fr;
+  }
+}
+
+
+

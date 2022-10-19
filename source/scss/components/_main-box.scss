@@ -1,0 +1,36 @@
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 204px;
+
+  grid-gap: clamp(20px, 2.667vw, 44px);
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(60px, 4.788vw, 79px);
+    line-height: 100%;
+    font-family: var(--font-family);
+    color: var(--color-c);
+    text-transform: uppercase;
+
+    &-small {
+      font-weight: 400;
+      font-size: clamp(52px, 4.364vw, 72px);
+      line-height: 100%;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.333vw, 22px);
+    line-height: normal;
+    font-family: var(--font-family1);
+    color: var(--color-c);
+  }
+}

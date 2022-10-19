@@ -1,0 +1,19 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: clamp(15px, 1.818vw, 30px);
+}
+
+

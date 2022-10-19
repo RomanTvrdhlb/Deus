@@ -1,0 +1,19 @@
+@keyframes rotateCursor {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-cursor {
+  width: 7px;
+  height: 7px;
+
+  background: var(--color-b);
+
+  transition: 0.15s linear;
+  animation: rotateCursor 1.75s infinite;
+}

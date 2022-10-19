@@ -1,0 +1,66 @@
+.image-box {
+  position: relative;
+
+  &__item {
+    position: absolute;
+
+    &--mark {
+      bottom: -20%;
+      left: 53%;
+      z-index: 6;
+    }
+
+    &--air {
+      top: 65%;
+      left: 65%;
+      z-index: 6;
+    }
+
+    &--ex {
+      top: 40%;
+      left: 19%;
+      z-index: 4;
+    }
+
+    &--logo {
+      top: 15%;
+      left: 22%;
+      z-index: 5;
+    }
+
+    &--flex {
+      top: 66%;
+      left: 21%;
+      z-index: 5;
+    }
+
+    &--mess {
+      top: 31%;
+      right: -5%;
+      z-index: 5;
+    }
+
+    &--boy {
+      top: -1%;
+      left: 64%;
+    }
+
+    &--rs {
+      top: 74%;
+      left: 78%;
+      z-index: 5;
+    }
+
+    &--kiss {
+      top: 26%;
+      left: 52%;
+      z-index: 5;
+    }
+
+    &--boobs {
+      top: 67%;
+      left: 49%;
+      z-index: 3;
+    }
+  }
+}
