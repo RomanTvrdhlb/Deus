@@ -1,13 +1,29 @@
 .image-box {
   position: relative;
 
+  width: 100%;
+  max-width: 1130px;
+
+
+  @keyframes increase {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.05);
+    }
+  }
   &__item {
     position: absolute;
+
 
     &--mark {
       bottom: -20%;
       left: 53%;
       z-index: 6;
+
+      animation: increase 3s infinite alternate;
     }
 
     &--air {
@@ -26,23 +42,31 @@
       top: 15%;
       left: 22%;
       z-index: 5;
+
+      animation: increase 3s infinite alternate;
     }
 
     &--flex {
       top: 66%;
       left: 21%;
       z-index: 5;
+
+      animation: increase 3s infinite alternate;
     }
 
     &--mess {
       top: 31%;
       right: -5%;
       z-index: 5;
+
+      animation: increase 3s infinite alternate;
     }
 
     &--boy {
       top: -1%;
       left: 64%;
+
+      animation: increase 3s infinite alternate;
     }
 
     &--rs {
@@ -61,6 +85,8 @@
       top: 67%;
       left: 49%;
       z-index: 3;
+
+      animation: increase 2s infinite alternate;
     }
   }
 }

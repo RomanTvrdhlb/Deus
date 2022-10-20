@@ -2,9 +2,45 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 204px;
+  padding-top: clamp(150px, 22.545vw, 372px);
 
-  grid-gap: clamp(20px, 2.667vw, 44px);
+  grid-gap: clamp(25px, 4.242vw, 70px);
+
+  &--first {
+    padding-top: clamp(80px, 12.364vw, 204px);
+
+    grid-gap: clamp(20px, 2.667vw, 44px);
+  }
+
+  &--more {
+    padding-top: clamp(80px, 11.879vw, 196px);
+  }
+
+  &__about {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.333vw, 22px);
+    line-height: normal;
+    font-family: var(--font-family);
+    color: var(--color-c);
+
+    &--first {
+      font-family: var(--font-family1);
+    }
+  }
+
+  &__social {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.333vw, 22px);
+    line-height: normal;
+    font-family: var(--font-family);
+    color: var(--color-b);
+  }
+
+  &__seo {
+    color: var(--color-e);
+  }
 
   &__title {
     display: flex;
@@ -18,19 +54,25 @@
     font-family: var(--font-family);
     color: var(--color-c);
     text-transform: uppercase;
+    &--team {
+      font-size: clamp(25px, 2.727vw, 45px);
+    }
+
+    &--more {
+      font-weight: 900;
+      font-size: clamp(25px, 2.727vw, 45px);
+    }
+
 
     &-small {
       font-weight: 400;
       font-size: clamp(52px, 4.364vw, 72px);
       line-height: 100%;
+
+      &--more {
+        font-weight: 400;
+        font-size: clamp(25px, 2.727vw, 45px);
+      }
     }
-  }
-  p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(16px, 1.333vw, 22px);
-    line-height: normal;
-    font-family: var(--font-family1);
-    color: var(--color-c);
   }
 }

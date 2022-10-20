@@ -1,0 +1,32 @@
+.index-team {
+  padding-bottom: clamp(80px, 9.515vw, 157px);
+
+  border-bottom: solid 1px var(--color-c);
+  &__box {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 850px 1fr;
+
+
+
+
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+
+      width: 500px;
+      height: 272px;
+
+      background-image: url(/img/index/logo2.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+}

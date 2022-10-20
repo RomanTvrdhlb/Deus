@@ -2,24 +2,25 @@
 <html lang="Ru">
 @include('partials/head.html')
 
-<body >
- 
-    @include('partials/header.html')
+<body>
 
-    <main>
+  @include('partials/header.html')
 
-      <section class="index-first" style="background-image:url(img/index/bg.png);">
-        <div class="container">
-          <div class="index-first__box">
-          <div class="main-box">
+  <main>
+
+    <section class="index-first" style="background-image:url(img/index/bg.png);">
+      <div class="container">
+        <div class="index-first__box">
+          <div class="main-box--first main-box">
             <h1 class="main-box__title">
               <span class="main-box__title-small">ТРАФИК ДЛЯ</span>
-              БЕТТИНГА И ГЕМБЛИНГА</h1>
-            <p>Комплексные решения по продвижению
+              БЕТТИНГА И ГЕМБЛИНГА
+            </h1>
+            <p class="main-box__about--first main-box__about">Комплексные решения по продвижению
               онлайн казино и букмекерских компаний.</p>
-              <button class="main-box__button transparent-btn">
-                Связаться
-              </button>
+            <button class="main-box__button transparent-btn">
+              Связаться
+            </button>
           </div>
           <div class="image-box">
             <div class="image-box__item--mark image-box__item">
@@ -84,16 +85,164 @@
             </div>
 
           </div>
-            
+
+        </div>
+      </div>
+    </section>
+<div class="main-container" style="background-image:url(img/index/bg1.png);">
+    <section class="index-team" style="background-image:url(img/index/bg1.png);">
+      <div class="container">
+        <div class="index-team__box">
+          <div class="main-box">
+            <h1 class="main-box__title--team main-box__title">
+              Наша Команда</h1>
+            <p class="main-box__social">Специализируется на привлечении трафика со всех возможных источников:<br>
+              <span class="main-box__seo">SEO</span>сайты, таргетированный трафик с социальных сетей<br>
+              (<span class="main-box__seo">Facebook, Instagram, Tik-Tok</span>), мессенджеров (<span
+                class="main-box__seo">Telegram, Viber, WhatsApp</span>),<br>
+              трафик с поисковых систем (<span class="main-box__seo">Google, Yandex, Bing, Yahoo</span>), рассылки <span
+                class="main-box__seo">SMS</span> и<br>
+              <span class="main-box__seo">E-mail</span>,<span class="main-box__seo">Push</span> трафик, трафик с
+              тизерных сетей.
+              <br><br>
+                 <span class="main-box__about">Также мы предлагаем комплексные решения по продвижению вашего бренда.
+                  Вывод в топ поисковых систем, размещение на партнерских сайтах с целевым трафик,<br>
+                  комплексное SEO продвижением в результате которого вы будете получать<br> дополнительно органический
+                  трафик еще долгое время после завершения наших<br> рекламных кампаний.</span>
+            </p>
+            <button class="main-box__button transparent-btn">
+              Контакты
+            </button>
+          </div>
+
+          <div class="team-box">
+            <div class="team-box__img--inst team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/inst.webp'>
+                <img width='500' height='129' src='img/index-team/inst.png' alt='image'>
+              </picture>
+            </div>
+            <div class="team-box__img--tongue team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/tongue.webp'>
+                <img width='234' height='220' src='img/index-team/tongue.png' alt='image'>
+              </picture>
+            </div>
+            <div class="team-box__img--fb team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/FB.webp'>
+                <img width='449' height='122' src='img/index-team/FB.png' alt='image'>
+              </picture>
+            </div>
+            <div class="team-box__img--tik team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/tik.webp'>
+                <img width='465' height='204' src='img/index-team/tik.png' alt='image'>
+              </picture>
+            </div>
+            <div class="team-box__img--telegram team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/telegram.webp'>
+                <img width='427' height='164' src='img/index-team/telegram.png' alt='image'>
+              </picture>
+            </div>
+            <div class="team-box__img--push team-box__img">
+              <picture>
+                <source type='image/webp' srcset='img/index-team/push.webp'>
+                <img width='396' height='119' src='img/index-team/push.png' alt='image'>
+              </picture>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+
+    <section class="index-more">
+      <div class="container">
+        <div class="index-more__box">
+          <div class="more-box">
+            <div class="more-box__item--samsung more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/samsung.webp'>
+                <img width='520' height='156' src='img/index-more/samsung.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--apple more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/apple.webp'>
+                <img width='137' height='137' src='img/index-more/apple.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--push more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/push.webp'>
+                <img width='475' height='131' src='img/index-more/push.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--cube more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/cube.webp'>
+                <img width='278' height='236' src='img/index-more/cube.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--market more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/market.webp'>
+                <img width='564' height='223' src='img/index-more/market.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--aso more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/aso.webp'>
+                <img width='259' height='143' src='img/index-more/aso.png' alt='image'>
+              </picture>
+            </div>
+            <div class="more-box__item--store more-box__item">
+              <picture>
+                <source type='image/webp' srcset='img/index-more/store.webp'>
+                <img width='495' height='218' src='img/index-more/store.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+
+
+
+          <div class="main-box--more main-box">
+            <h1 class="main-box__title--more main-box__title">Мы одни из немногих
+              <span class="main-box__title-small--more main-box__title-small">кто может целостно
+                разработать приложения</span>
+            </h1>
+            <p class="main-box__about">Под самые разнообразные магазины приложений<br>
+              (App Store, Google play market, Samsung app market),<br>
+              мы предоставим вам приложение отличного качества, в нем будет совмещены уникальный агрессивный дизайн, что
+              увеличит конверсию<br>
+              в разы и самые новые технологии в разработке приложений.
+              <br><br>
+              (трекинг игроков, push уведомления с возможностью подгрузки картинок,<br> возможность проводить ретеншент
+              промо-акции).
+              <br><br>
+              Одна из уникальных услуг - ASO продвижение приложения в маркетах,<br>
+              с которым вы сможете получать органический трафик<br>
+              без дополнительных затрат на продвижение.
+            </p>
+
+            <button class="main-box__button transparent-btn">
+              Контакты
+            </button>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+  </div>
   </main>
 
   @include('partials/footer.html')
 
-  <!-- @include('partials/overlay.html') --> 
+  <!-- @include('partials/overlay.html') -->
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>

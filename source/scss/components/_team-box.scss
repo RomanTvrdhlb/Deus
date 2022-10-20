@@ -1,0 +1,69 @@
+.team-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 799px;
+
+  @keyframes shake {
+    from {
+      transform: scale(1) rotate(0deg);
+    }
+
+    to {
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+  @keyframes shakeLeft {
+    from {
+      transform: scale(1) rotate(-5deg);
+    }
+
+    to {
+      transform: scale(1.1) rotate(0deg);
+    }
+  }
+
+
+  &__img {
+    position: absolute;
+
+    animation: shake 4s infinite alternate;
+    &--inst {
+      top: 26%;
+      left: 6%;
+    }
+
+    &--tongue {
+      top: 41%;
+      left: 15%;
+
+      animation: increase 3s infinite alternate;
+    }
+    &--fb {
+      top: 44%;
+      right: -7%;
+
+      animation: shakeLeft 4s infinite alternate;
+    }
+
+    &--tik {
+      top: 58%;
+      left: 17%;
+
+      animation: shake 4s infinite alternate;
+    }
+
+    &--push {
+      top: 82%;
+      left: 0;
+
+      animation: shakeLeft 4s infinite alternate;
+    }
+    &--telegram {
+      top: 71%;
+      right: -10%;
+
+      animation: increase 3s infinite alternate;
+    }
+  }
+}

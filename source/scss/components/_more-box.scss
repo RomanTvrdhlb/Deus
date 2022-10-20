@@ -1,0 +1,47 @@
+.more-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 799px;
+
+
+
+  &__item {
+    position: absolute;
+
+    &--samsung {
+      top: 21%;
+      left: 14%;
+    }
+
+    &--apple {
+      top: 26%;
+      left: -5%;
+      z-index: 2;
+    }
+
+    &--push {
+      top: 38%;
+      left: -2%;
+    }
+    &--cube {
+      top: 42%;
+      left: 53%;
+      z-index: 2;
+    }
+
+    &--market {
+      top: 52%;
+      left: -9%;
+    }
+
+    &--aso {
+      top: 75%;
+      left: -8%;
+    }
+    &--store {
+      top: 74%;
+      left: 30%;
+    }
+  }
+}
