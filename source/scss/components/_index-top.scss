@@ -1,0 +1,16 @@
+.index-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 0;
+
+  border-bottom: solid 1px var(--color-c);
+  &__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(35px, 3.03vw, 50px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+  }
+}

@@ -1,0 +1,111 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    position: relative;
+
+    display: grid;
+    width: 100%;
+
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &:nth-child(even) {
+      justify-items: end;
+      .main-list {
+        order: 2;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: var(--color-c);
+    }
+  }
+
+
+  &__inner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+
+
+
+    &--seo {
+      top: 20%;
+      left: 27%;
+    }
+
+    &--promo {
+      top: 60%;
+      left: 7%;
+    }
+    &--target {
+      top: 16%;
+      left: 3%;
+    }
+    &--logo {
+      top: 46%;
+      left: 31%;
+    }
+    &--smile {
+      top: 20%;
+      left: 15%;
+    }
+    &--engine {
+      top: 35%;
+      left: 54%;
+      z-index: 3;
+    }
+    &--traffic {
+      top: 60%;
+      left: 32%;
+      z-index: 2;
+    }
+    &--search {
+      top: 10%;
+      left: 27%;
+      z-index: 2;
+    }
+
+
+    &--media {
+      top: 17%;
+      left: -11%;
+    }
+    &--brand {
+      top: 17%;
+      left: 40%;
+    }
+    &--dev {
+      top: 45%;
+      left: -7%;
+    }
+
+    &--promotion {
+      top: 17%;
+      left: 0;
+    }
+    &--application {
+      top: 17% !important;
+    }
+    &--through {
+      top: 41%;
+      left: 33%;
+    }
+  }
+}
