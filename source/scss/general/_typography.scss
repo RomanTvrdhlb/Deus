@@ -24,12 +24,12 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 6%;
 
-    width: 75px;
-    height: 75px;
+    width: 35px;
+    height: 35px;
 
-    background-image: url(/img/index/arrow.png);
+    background-image: url("data:image/svg+xml,%3Csvg data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 231.5 231.5'%3E%3Cpath d='M221.5 224.5V10H7.1m214.4 0L7.1 224.5' style='fill:none;stroke:%23da1409;stroke-miterlimit:10;stroke-width:20px'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center center;
     transform: translateY(-50%);

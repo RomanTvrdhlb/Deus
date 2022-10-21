@@ -1,0 +1,52 @@
+.clients-box {
+  position: relative;
+
+  width: 100%;
+  min-height: Min(42.545vw, 702px);
+
+
+  &__img {
+    position: absolute;
+
+
+    &--win {
+      top: -25%;
+      left: -7%;
+
+      width: Min(31.939vw, 527px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+
+    &--circle {
+      top: 9%;
+      left: 5%;
+
+      width: Min(20vw, 330px);
+      height: auto;
+
+      animation: shakeLeft 3.5s infinite alternate;
+    }
+    &--hand {
+      top: 6%;
+      left: 46%;
+      z-index: 3;
+
+      width: Min(21.212vw, 350px);
+      height: auto;
+
+      animation: increase 2s infinite alternate;
+    }
+    &--road {
+      top: -11%;
+      right: -8%;
+      z-index: 2;
+
+      width: Min(34.909vw, 576px);
+      height: auto;
+
+      animation: shake 4s infinite alternate;
+    }
+  }
+}

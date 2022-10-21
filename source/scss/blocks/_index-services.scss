@@ -1,0 +1,19 @@
+.index-services {
+  position: relative ;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12%;
+    right: 0;
+
+    width: 495px;
+    height: 808px;
+
+    background-image: url(/img/index/img3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}

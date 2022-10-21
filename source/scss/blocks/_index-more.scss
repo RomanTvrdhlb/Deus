@@ -1,5 +1,5 @@
 .index-more {
-  padding-bottom: clamp(90px, 11.879vw, 196px);
+  padding: clamp(80px, 11.879vw, 196px) 0 clamp(90px, 11.879vw, 196px);
 
   border-bottom: solid 1px var(--color-c);
   &__box {

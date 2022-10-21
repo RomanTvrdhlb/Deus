@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: fit-content  !important;
-  padding: clamp(60px, 8.485vw, 140px) 0;
 
   counter-reset: li;
 
@@ -17,7 +16,7 @@
 
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(16px, 1.333vw, 22px);
     line-height: 125%;
     font-family: var(--font-family);
     text-align: left;
@@ -28,22 +27,44 @@
     &:before {
       content: counter(li, decimal-leading-zero) " ";
       position: absolute;
-      top: 50%;
       left: 0;
-
-      width: 26px;
-      height: 25px;
 
       font-style: normal;
       font-weight: 800;
-      font-size: 22px;
+      font-size: inherit;
       font-family: var(--font-family);
       text-align: center;
       color: var(--color-g);
 
-      transform: translateY(-50%);
+      transform: translateY(5%);
 
       counter-increment: li;
+    }
+
+    &--orange {
+      &::before {
+        color: var(--color-i);
+      }
+    }
+    &--blue {
+      &::before {
+        color: var(--color-j);
+      }
+    }
+    &--blue {
+      &::before {
+        color: var(--color-j);
+      }
+    }
+    &--azure {
+      &::before {
+        color: var(--color-l);
+      }
+    }
+    &--green {
+      &::before {
+        color: var(--color-m);
+      }
     }
   }
 }

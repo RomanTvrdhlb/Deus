@@ -8,6 +8,7 @@
 
     display: grid;
     width: 100%;
+    padding: clamp(60px, 8.485vw, 140px) 0;
 
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -22,10 +23,10 @@
     &::before {
       content: "";
       position: absolute;
+      right: -100vw;
       bottom: 0;
-      left: 0;
+      left: -100vw;
 
-      width: 100%;
       height: 1px;
 
       background-color: var(--color-c);
@@ -37,7 +38,7 @@
     position: relative;
 
     width: 100%;
-    height: 100%;
+    min-height: Min(17.879vw, 295px);
   }
 
   &__img {
@@ -48,11 +49,17 @@
     &--seo {
       top: 20%;
       left: 27%;
+
+      width: Min(16.182vw, 267px);
+      height: auto;
     }
 
     &--promo {
       top: 60%;
       left: 7%;
+
+      width: Min(36.182vw, 597px);
+      height: auto;
     }
     &--target {
       top: 16%;

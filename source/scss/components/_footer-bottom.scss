@@ -1,0 +1,29 @@
+.footer-bottom {
+  &__box {
+    display: grid;
+
+    grid-template-columns: 50%  repeat(2, auto);
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 30px 5px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+
+    &:not(:first-child) {
+      justify-content: center;
+
+      border-left: 1px solid var(--color-b);
+    }
+
+    &:last-child {
+      justify-content: end;
+    }
+  }
+}
