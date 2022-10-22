@@ -1,0 +1,61 @@
+.info-box {
+  position: relative;
+
+  width: 100%;
+  min-height: Min(31.636vw, 522px);
+
+
+  &__img {
+    position: absolute;
+
+
+
+    &--text {
+      top: -2%;
+      left: -5%;
+
+      width: Min(25.03vw, 413px);
+      height: auto;
+
+      animation: increase 3.5s infinite alternate;
+    }
+    &--lips {
+      top: 55%;
+      left: -12%;
+
+      width: Min(10.121vw, 167px);
+      height: auto;
+
+      animation: increase 2s infinite alternate;
+    }
+    &--collar {
+      top: 41%;
+      left: 31%;
+
+      width: Min(19.939vw, 329px);
+      height: auto;
+
+      animation: increase 3s infinite alternate;
+    }
+
+    &--boy {
+      top: -4%;
+      left: 26%;
+
+      width: Min(22.485vw, 371px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+
+    &--mess {
+      top: 38%;
+      left: 51%;
+
+      width: Min(19.091vw, 315px);
+      height: auto;
+
+      animation: increase 3s infinite alternate;
+    }
+  }
+}

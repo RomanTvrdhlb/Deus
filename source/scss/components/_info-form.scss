@@ -1,0 +1,29 @@
+.info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-gap: clamp(25px, 2.182vw, 36px);
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: clamp(400px, 31.576vw, 521px);
+    padding: 24px;
+
+    font-weight: 300;
+    font-size: clamp(18px, 1.515vw, 25px);
+    line-height: 100%;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-b);
+
+    border: solid 1px var(--color-c);
+
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}

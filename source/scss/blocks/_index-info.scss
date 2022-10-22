@@ -1,0 +1,11 @@
+.index-info {
+  padding: clamp(25px, 3.394vw, 56px) 0 clamp(25px, 3.758vw, 62px);
+
+  border-bottom: solid 1px var(--color-c);
+
+  &__box {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

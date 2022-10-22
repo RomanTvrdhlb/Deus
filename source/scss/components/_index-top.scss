@@ -40,6 +40,13 @@
   }
 }
 
+.info-top {
+  padding: 0 0 clamp(25px, 2.909vw, 48px);
+  &::before {
+    display: none;
+  }
+}
+
 
 .comand-top {
   position: relative;
@@ -49,7 +56,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -45%;
+    top: -43%;
     left: -2%;
 
     width: 335px;
