@@ -3,23 +3,51 @@
     display: grid;
 
     grid-template-columns: 50%  repeat(2, auto);
+
+@include mobile {
+      grid-template-columns: 100%;
+    }
   }
   &__item {
+    position: relative;
+
     display: flex;
     align-items: center;
-    padding: 30px 5px;
+    padding: clamp(5px, 1.818vw, 30px) 5px;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(14px, 1.212vw, 20px);
     line-height: 100%;
     font-family: var(--font-family);
     color: var(--color-b);
+
+@include mobile {
+      justify-content: center !important;
+
+      &:not(:last-child) {
+        &::before {
+          content: "";
+          position: absolute;
+          right: -100vw;
+          bottom: 0;
+          left: -100vw;
+
+          height: 1px;
+
+          background-color: var(--color-c);
+        }
+      }
+    }
 
     &:not(:first-child) {
       justify-content: center;
 
       border-left: 1px solid var(--color-b);
+
+@include mobile {
+        border: none;
+      }
     }
 
     &:last-child {

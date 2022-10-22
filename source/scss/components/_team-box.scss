@@ -36,6 +36,16 @@
       height: auto;
 
       animation: shake 4s infinite alternate;
+
+@include tablet {
+        top: -30%;
+        left: 6%;
+      }
+
+@include mobile {
+        top: -38%;
+        left: 6%;
+      }
     }
 
     &--tongue {
@@ -55,6 +65,16 @@
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
+
+@include tablet {
+        top: -10%;
+        left: 50%;
+      }
+
+@include mobile {
+        top: -31%;
+        left: 63%;
+      }
     }
 
     &--tik {
@@ -65,6 +85,16 @@
       height: auto;
 
       animation: shake 4s infinite alternate;
+
+@include tablet {
+        top: 31%;
+        left: 40%;
+      }
+
+@include mobile {
+        top: 13%;
+        left: 40%;
+      }
     }
 
     &--push {
@@ -75,6 +105,11 @@
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
+
+@include tablet {
+        top: 65%;
+        left: 7%;
+      }
     }
     &--telegram {
       top: 46%;
@@ -84,6 +119,16 @@
       height: auto;
 
       animation: increase 2.5s infinite alternate;
+
+@include tablet {
+        top: 68%;
+        left: 61%;
+      }
+
+@include mobile {
+        top: 57%;
+        left: 61%;
+      }
     }
   }
 }

@@ -1,6 +1,11 @@
 .header-choice {
   min-width: 0;
   max-width: 107px;
+
+@include tablet {
+    display: none;
+  }
+
   &__icon {
     width: 20px;
     height: 12px;

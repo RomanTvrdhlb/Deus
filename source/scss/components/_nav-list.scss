@@ -6,6 +6,10 @@
   max-width: 773px;
 
   grid-gap: clamp(10px, 3.333vw, 55px);
+
+@include tablet {
+    display: none;
+  }
   &__link {
     font-style: normal;
     font-weight: 500;

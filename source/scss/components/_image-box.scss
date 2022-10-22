@@ -2,7 +2,8 @@
   position: relative;
 
   width: 100%;
-  max-width: 1130px;
+  max-width: Min(68.485vw, 1130px);
+
 
 
   @keyframes increase {
@@ -19,72 +20,102 @@
 
 
     &--mark {
-      bottom: -20%;
-      left: 53%;
+      bottom: -19%;
+      left: 54%;
       z-index: 6;
+
+      width: Min(7.758vw, 128px);
+      height: auto;
 
       animation: increase 3s infinite alternate;
     }
 
     &--air {
-      top: 65%;
-      left: 65%;
+      top: 47%;
+      left: 66%;
       z-index: 6;
+
+      width: Min(4.061vw, 67px);
+      height: auto;
     }
 
     &--ex {
-      top: 40%;
-      left: 19%;
+      top: 14%;
+      left: 22%;
       z-index: 4;
+
+      width: Min(51.515vw, 850px);
+      height: auto;
     }
 
     &--logo {
-      top: 15%;
+      top: -20%;
       left: 22%;
       z-index: 5;
+
+      width: Min(22.121vw, 365px);
+      height: auto;
 
       animation: increase 3s infinite alternate;
     }
 
     &--flex {
-      top: 66%;
-      left: 21%;
+      top: 47%;
+      left: 22%;
       z-index: 5;
+
+      width: Min(10.061vw, 166px);
+      height: auto;
 
       animation: increase 3s infinite alternate;
     }
 
     &--mess {
-      top: 31%;
-      right: -5%;
+      top: 3%;
+      left: 77%;
       z-index: 5;
+
+      width: Min(20vw, 330px);
+      height: auto;
 
       animation: increase 3s infinite alternate;
     }
 
     &--boy {
-      top: -1%;
-      left: 64%;
+      top: -42%;
+      left: 65%;
+
+      width: Min(22.485vw, 371px);
+      height: auto;
 
       animation: increase 3s infinite alternate;
     }
 
     &--rs {
-      top: 74%;
-      left: 78%;
+      top: 57%;
+      left: 79%;
       z-index: 5;
+
+      width: Min(7.455vw, 123px);
+      height: auto;
     }
 
     &--kiss {
-      top: 26%;
-      left: 52%;
+      top: -5%;
+      left: 53%;
       z-index: 5;
+
+      width: Min(10vw, 165px);
+      height: auto;
     }
 
     &--boobs {
-      top: 67%;
+      top: 49%;
       left: 49%;
       z-index: 3;
+
+      width: Min(19.636vw, 324px);
+      height: auto;
 
       animation: increase 2s infinite alternate;
     }

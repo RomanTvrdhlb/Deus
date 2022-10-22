@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 850px;
 
-  grid-gap: clamp(25px, 4.242vw, 70px);
+  grid-gap: clamp(20px, 4.242vw, 70px);
+
+@include mobile {
+    align-items: center;
+  }
+
+@include tablet {
+    padding: 0 10px;
+  }
 
   &--first {
     grid-gap: clamp(20px, 2.667vw, 44px);

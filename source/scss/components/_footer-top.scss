@@ -1,10 +1,22 @@
-.footer-top {
-  position: relative;
+.footer-top { position: relative;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+
+  grid-gap: 30px;
+  @include small-tablet {
+    display: none;
+  } 
+  .header-choice {
+    display: initial;
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &::before {
     content: "";
     position: absolute;

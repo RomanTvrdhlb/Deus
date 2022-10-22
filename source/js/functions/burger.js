@@ -8,8 +8,8 @@ import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} fro
 let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');
 
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-header');
+const burger = document.querySelector('[burger]');
+const mobileMenu = document.querySelector('[mobile-header]');
 
 
 // let burger = document.querySelector('.burger');
@@ -35,6 +35,7 @@ const hideMenuHandler = function(overlay, mobileMenu, burger) {
     removeCustomClass(_vars.bodyEl, 'fixed')
     // headerTag.classList.remove('active');
     // document.body.classList.remove('dis-scroll')
+   
 }
 
 
