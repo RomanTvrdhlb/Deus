@@ -8,10 +8,15 @@
 
     display: grid;
     width: 100%;
-    padding: clamp(60px, 8.485vw, 140px) 0;
+    padding: clamp(60px, 7.273vw, 120px) 0 clamp(15px, 1.818vw, 30px);
 
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+
+    &:last-child {
+      padding: clamp(60px, 7.273vw, 120px) 0 clamp(15px, 6.061vw, 100px);
+    }
+
 
     &:nth-child(even) {
       justify-items: end;
@@ -38,7 +43,7 @@
     position: relative;
 
     width: 100%;
-    min-height: Min(17.879vw, 295px);
+    min-height: Min(18.606vw, 307px);
   }
 
   &__img {
@@ -47,72 +52,134 @@
 
 
     &--seo {
-      top: 20%;
-      left: 27%;
+      top: -23%;
+      left: 19%;
 
       width: Min(16.182vw, 267px);
       height: auto;
+
+      animation: shake 4s infinite alternate;
     }
 
     &--promo {
-      top: 60%;
-      left: 7%;
+      top: 31%;
+      left: -1%;
 
       width: Min(36.182vw, 597px);
       height: auto;
+
+      animation: increase 3s infinite alternate;
     }
     &--target {
-      top: 16%;
-      left: 3%;
+      top: -17%;
+      left: 11%;
+      z-index: 2;
+
+      width: Min(25.758vw, 425px);
+      height: auto;
+
+      animation: shakeLeft 4s infinite alternate;
     }
     &--logo {
-      top: 46%;
-      left: 31%;
+      top: 30%;
+      left: 35%;
+
+      width: Min(29.152vw, 481px);
+      height: auto;
+
+      animation: shakeLeft 4s infinite alternate;
     }
     &--smile {
-      top: 20%;
-      left: 15%;
+      top: -21%;
+      left: 7%;
+
+      width: Min(13.697vw, 226px);
+      height: auto;
+
+      animation: increase 2s infinite alternate;
     }
     &--engine {
-      top: 35%;
-      left: 54%;
+      top: 1%;
+      left: 44%;
       z-index: 3;
+
+      width: Min(20.364vw, 336px);
+      height: auto;
+
+      animation: increase 2s infinite alternate;
     }
     &--traffic {
-      top: 60%;
-      left: 32%;
+      top: 32%;
+      left: 23%;
       z-index: 2;
+
+      width: Min(23.394vw, 386px);
+      height: auto;
     }
     &--search {
-      top: 10%;
-      left: 27%;
+      top: -31%;
+      left: 18%;
       z-index: 2;
+
+      width: Min(24.182vw, 399px);
+      height: auto;
     }
 
 
     &--media {
-      top: 17%;
-      left: -11%;
+      top: -15%;
+      left: 17%;
+
+      width: Min(19.515vw, 322px);
+      height: auto;
+
+      animation: increase 3.5s infinite alternate;
     }
     &--brand {
-      top: 17%;
-      left: 40%;
+      top: -16%;
+      left: 64%;
+
+      width: Min(17.576vw, 290px);
+      height: auto;
+
+      animation: increase 3.5s infinite alternate;
     }
     &--dev {
-      top: 45%;
-      left: -7%;
+      top: 29%;
+      left: 21%;
+
+      width: Min(36.182vw, 597px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
     }
 
     &--promotion {
-      top: 17%;
-      left: 0;
+      top: -12%;
+      left: -6%;
+
+      width: Min(28.545vw, 471px);
+      height: auto;
+
+      animation: increase 3.5s infinite alternate;
     }
     &--application {
-      top: 17% !important;
+      top: 61%;
+      left: 30%;
+
+      width: Min(30.424vw, 502px);
+      height: auto;
+
+      animation: increase 3.5s infinite alternate;
     }
     &--through {
-      top: 41%;
-      left: 33%;
+      top: 23%;
+      left: 23%;
+
+      width: Min(22.485vw, 371px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
     }
   }
 }

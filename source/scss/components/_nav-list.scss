@@ -15,5 +15,13 @@
     text-align: center;
     color: var(--color-c);
     text-transform: uppercase;
+
+    transition: all 0.4s;
+
+    &:hover {
+      color: var(--color-e);
+
+      transform: scale(1.05);
+    }
   }
 }

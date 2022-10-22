@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  max-width: 799px;
+  min-height: Min(40.061vw, 661px);
 
   @keyframes shake {
     from {
@@ -27,43 +27,63 @@
   &__img {
     position: absolute;
 
-    animation: shake 4s infinite alternate;
+
     &--inst {
-      top: 26%;
+      top: -16%;
       left: 6%;
+
+      width: Min(30.485vw, 503px);
+      height: auto;
+
+      animation: shake 4s infinite alternate;
     }
 
     &--tongue {
-      top: 41%;
+      top: 3%;
       left: 15%;
 
-      animation: increase 3s infinite alternate;
+      width: Min(14.182vw, 234px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
     }
     &--fb {
-      top: 44%;
-      right: -7%;
+      top: 7%;
+      left: 51%;
+
+      width: Min(27.212vw, 449px);
+      height: auto;
 
       animation: shakeLeft 4s infinite alternate;
     }
 
     &--tik {
-      top: 58%;
+      top: 28%;
       left: 17%;
+
+      width: Min(28.182vw, 465px);
+      height: auto;
 
       animation: shake 4s infinite alternate;
     }
 
     &--push {
-      top: 82%;
+      top: 63%;
       left: 0;
+
+      width: Min(24vw, 396px);
+      height: auto;
 
       animation: shakeLeft 4s infinite alternate;
     }
     &--telegram {
-      top: 71%;
-      right: -10%;
+      top: 46%;
+      left: 56%;
 
-      animation: increase 3s infinite alternate;
+      width: Min(25.879vw, 427px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
     }
   }
 }
