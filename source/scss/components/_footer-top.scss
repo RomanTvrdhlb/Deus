@@ -1,21 +1,54 @@
-.footer-top { position: relative;
+.footer-top {
+  position: relative;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
 
-  grid-gap: 30px;
-  @include small-tablet {
-    display: none;
-  } 
+  grid-gap: clamp(10px, 1.818vw, 30px);
+
+@include small-tablet {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+  }
+
+  .header__logo {
+    @include small-tablet {
+      width: 70px;
+      height: 100%;
+    }
+
+@include mobile {
+      width: 50px;
+    }
+  }
   .header-choice {
     display: initial;
+
+@include small-tablet {
+      display: none;
+    }
   }
   .nav-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    grid-gap: clamp(5px, 3.333vw, 55px);
+
+@include small-tablet {
+      justify-content: space-around;
+    }
+
+@include mobile {
+      justify-content: space-around;
+    }
+
+    &__link {
+      font-size: clamp(14px, 1.212vw, 20px);
+    }
   }
   &::before {
     content: "";

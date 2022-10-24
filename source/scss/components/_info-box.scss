@@ -2,9 +2,13 @@
   position: relative;
 
   width: 100%;
-  min-height: Min(31.636vw, 522px);
+  min-height: Min(24.242vw, 400px);
 
-
+  &--right {
+    @include mobile {
+      display: none;
+    }
+  }
   &__img {
     position: absolute;
 
@@ -18,6 +22,15 @@
       height: auto;
 
       animation: increase 3.5s infinite alternate;
+
+@include big-desktop {
+        left: 5%;
+      }
+
+@include small-tablet {
+        top: -5%;
+        left: 36%;
+      }
     }
     &--lips {
       top: 55%;
@@ -27,6 +40,16 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        top: 39%;
+        left: 1%;
+      }
+
+@include small-tablet {
+        top: 52%;
+        left: 27%;
+      }
     }
     &--collar {
       top: 41%;
@@ -36,6 +59,11 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include small-tablet {
+        top: 24%;
+        left: 57%;
+      }
     }
 
     &--boy {
@@ -46,6 +74,16 @@
       height: auto;
 
       animation: increase 2.5s infinite alternate;
+
+@include tablet {
+        top: 0;
+        left: 14%;
+      }
+
+@include small-tablet {
+        top: 0;
+        left: 7%;
+      }
     }
 
     &--mess {
@@ -56,6 +94,11 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include small-tablet {
+        top: 46%;
+        left: 22%;
+      }
     }
   }
 }

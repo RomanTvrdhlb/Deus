@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  min-height: Min(42.545vw, 702px);
+  min-height: Min(30.303vw, 500px);
 
 
   &__img {
@@ -17,6 +17,16 @@
       height: auto;
 
       animation: increase 2.5s infinite alternate;
+
+@include tablet {
+        top: -36%;
+        left: 32%;
+      }
+
+@include small-tablet {
+        top: -64%;
+        left: 15%;
+      }
     }
 
     &--circle {
@@ -27,6 +37,16 @@
       height: auto;
 
       animation: shakeLeft 3.5s infinite alternate;
+
+@include tablet {
+        top: 17%;
+        left: 39%;
+      }
+
+@include small-tablet {
+        top: -4%;
+        left: 24%;
+      }
     }
     &--hand {
       top: 6%;
@@ -37,6 +57,16 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        top: 6%;
+        left: 63%;
+      }
+
+@include small-tablet {
+        top: -22%;
+        left: 50%;
+      }
     }
     &--road {
       top: -11%;
@@ -47,6 +77,16 @@
       height: auto;
 
       animation: shake 4s infinite alternate;
+
+@include tablet {
+        top: -22%;
+        right: 4%;
+      }
+
+@include small-tablet {
+        top: -50%;
+        right: 18%;
+      }
     }
   }
 }

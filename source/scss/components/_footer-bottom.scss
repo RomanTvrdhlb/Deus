@@ -17,7 +17,7 @@
 
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(14px, 1.212vw, 20px);
+    font-size: clamp(13px, 1.212vw, 20px);
     line-height: 100%;
     font-family: var(--font-family);
     color: var(--color-b);
@@ -25,6 +25,7 @@
 @include mobile {
       justify-content: center !important;
 
+      text-align: center;
       &:not(:last-child) {
         &::before {
           content: "";
