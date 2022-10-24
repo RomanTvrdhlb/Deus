@@ -15,5 +15,26 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+
+@include small-tablet {
+      display: none;
+    }
+
+@include big-desktop {
+      width: 255px !important;
+      height: 550px !important;
+    }
+
+@include tablet {
+      top: -8%;
+
+      width: 155px !important;
+      height: 450px !important;
+    }
+
+    @media (max-width: (1850px)) {
+      width: 355px;
+      height: 650px;
+    }
   }
 }

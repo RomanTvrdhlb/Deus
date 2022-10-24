@@ -8,15 +8,23 @@
 
     display: grid;
     width: 100%;
-    padding: clamp(60px, 7.273vw, 120px) 0 clamp(15px, 1.818vw, 30px);
+    padding: clamp(40px, 7.273vw, 120px) 0;
 
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 
-    &:last-child {
-      padding: clamp(60px, 7.273vw, 120px) 0 clamp(15px, 6.061vw, 100px);
+@include tablet {
+      grid-gap: 50px;
+      grid-template-columns: 100%;
+      .main-list {
+        order: 2;
+        max-width: 550px;
+      }
     }
 
+@include small-tablet {
+      justify-items: center !important;
+    }
 
     &:nth-child(even) {
       justify-items: end;
@@ -24,6 +32,7 @@
         order: 2;
       }
     }
+
 
     &::before {
       content: "";
@@ -43,7 +52,7 @@
     position: relative;
 
     width: 100%;
-    min-height: Min(18.606vw, 307px);
+    min-height: Min(9.697vw, 160px);
   }
 
   &__img {
@@ -52,23 +61,39 @@
 
 
     &--seo {
-      top: -23%;
+      top: -40%;
       left: 19%;
 
       width: Min(16.182vw, 267px);
       height: auto;
 
       animation: shake 4s infinite alternate;
+
+@include tablet {
+        left: 60%;
+      }
+
+@include small-tablet {
+        left: 40%;
+      }
     }
 
     &--promo {
-      top: 31%;
+      top: 64%;
       left: -1%;
 
       width: Min(36.182vw, 597px);
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        left: 60%;
+      }
+
+@include small-tablet {
+        left: 30%;
+      }
     }
     &--target {
       top: -17%;
@@ -79,6 +104,14 @@
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
+
+@include tablet {
+        left: 3%;
+      }
+
+@include small-tablet {
+        left: 23%;
+      }
     }
     &--logo {
       top: 30%;
@@ -88,15 +121,32 @@
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
+
+@include tablet {
+        left: 25%;
+      }
+
+@include small-tablet {
+        top: 37%;
+        left: 43%;
+      }
     }
     &--smile {
-      top: -21%;
+      top: -40%;
       left: 7%;
 
       width: Min(13.697vw, 226px);
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        left: 43%;
+      }
+
+@include small-tablet {
+        left: 23%;
+      }
     }
     &--engine {
       top: 1%;
@@ -107,22 +157,46 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        left: 66%;
+      }
+
+@include small-tablet {
+        left: 50%;
+      }
     }
     &--traffic {
-      top: 32%;
+      top: 61%;
       left: 23%;
       z-index: 2;
 
       width: Min(23.394vw, 386px);
       height: auto;
+
+@include tablet {
+        left: 54%;
+      }
+
+@include small-tablet {
+        left: 35%;
+      }
     }
     &--search {
-      top: -31%;
+      top: -57%;
       left: 18%;
       z-index: 2;
 
       width: Min(24.182vw, 399px);
       height: auto;
+
+@include tablet {
+        left: 49%;
+      }
+
+@include small-tablet {
+        left: 30%;
+      }
     }
 
 
@@ -134,6 +208,15 @@
       height: auto;
 
       animation: increase 3.5s infinite alternate;
+
+@include tablet {
+        left: 4%;
+      }
+
+@include small-tablet {
+        top: -18%;
+        left: 27%;
+      }
     }
     &--brand {
       top: -16%;
@@ -143,15 +226,34 @@
       height: auto;
 
       animation: increase 3.5s infinite alternate;
+
+@include tablet {
+        left: 27%;
+      }
+
+@include small-tablet {
+        top: -22%;
+        left: 49%;
+      }
     }
     &--dev {
-      top: 29%;
+      top: 38%;
       left: 21%;
 
       width: Min(36.182vw, 597px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
+
+@include tablet {
+        top: 72%;
+        left: 6%;
+      }
+
+@include small-tablet {
+        top: 65%;
+        left: 29%;
+      }
     }
 
     &--promotion {
@@ -160,17 +262,33 @@
 
       width: Min(28.545vw, 471px);
       height: auto;
+ animation: increase 3.5s infinite alternate;
 
-      animation: increase 3.5s infinite alternate;
+@include tablet {
+        top: -49%;
+        left: 46%;
+      }
+
+@include small-tablet {
+        left: 21%;
+      } 
     }
     &--application {
-      top: 61%;
+      top: 65%;
       left: 30%;
 
       width: Min(30.424vw, 502px);
       height: auto;
+ animation: increase 3.5s infinite alternate;
 
-      animation: increase 3.5s infinite alternate;
+@include tablet {
+        top: 90%;
+        left: 67%;
+      }
+
+@include small-tablet {
+        left: 49%;
+      } 
     }
     &--through {
       top: 23%;
@@ -178,8 +296,16 @@
 
       width: Min(22.485vw, 371px);
       height: auto;
+ animation: increase 2.5s infinite alternate;
 
-      animation: increase 2.5s infinite alternate;
+@include tablet {
+        top: 19%;
+        left: 60%;
+      }
+
+@include small-tablet {
+        left: 38%;
+      } 
     }
   }
 }

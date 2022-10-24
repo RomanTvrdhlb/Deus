@@ -72,7 +72,7 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(50px, 4.788vw, 79px);
+    font-size: clamp(40px, 4.788vw, 79px);
     line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-c);
@@ -102,7 +102,7 @@
 
     &-small {
       font-weight: 400;
-      font-size: clamp(42px, 4.364vw, 72px);
+      font-size: clamp(40px, 4.364vw, 72px);
       line-height: 120%;
 
       &--more {
