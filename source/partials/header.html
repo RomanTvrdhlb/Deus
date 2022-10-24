@@ -3,8 +3,8 @@
     <div class="mobile-header" mobile-header>
       <a href="#" class="header__logo">
         <picture>
-          <source type='image/webp' srcset='img/index/logo.webp'>
-          <img width='161' height='163' src='img/index/logo.png' alt='image'>
+          <source type='image/webp' srcset='img/index/logo-small.webp'>
+          <img width='86' height='87' src='img/index/logo-small.png' alt='image'>
         </picture>
       </a>
 
@@ -51,10 +51,14 @@
 
     <div class="header">
       <a href="#" class="header__logo">
-        <picture>
-          <source type='image/webp' srcset='img/index/logo.webp'>
-          <img width='161' height='163' src='img/index/logo.png' alt='image'>
-        </picture>
+<picture>
+  <source type='image/webp' media='(max-width: 1024px)' srcset='img/index/logo-small.webp'>
+  <source media='(max-width: 1024px)' srcset='img/index/logo-small.png'>
+  <source type='image/webp' srcset='img/index/logo.webp'>
+  <img width='161' height='163' src='img/index/logo.png' alt='logo'>
+</picture>
+
+
       </a>
 
       <nav class="header-nav">

@@ -9,7 +9,7 @@
 
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: clamp(20px, 1.515vw, 25px);
   line-height: 115%;
   font-family: var(--font-family);
   color: var(--color-c);

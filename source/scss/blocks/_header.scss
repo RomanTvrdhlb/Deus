@@ -14,6 +14,16 @@ header {
   align-items: center;
   width: 100%;
   padding-top: clamp(15px, 1.818vw, 30px);
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+@include tablet {
+      max-width: 87px;
+    }
+  }
 }
 
 

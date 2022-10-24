@@ -10,10 +10,11 @@
 @include tablet {
     display: none;
   }
+
   &__link {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(16px, 1.212vw, 20px);
     line-height: 125%;
     font-family: var(--font-family);
     text-align: center;

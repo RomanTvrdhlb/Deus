@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  max-width: Min(68.485vw, 1130px);
+  min-height: Min(29.697vw, 490px);
 
 
 
@@ -28,6 +28,15 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include laptop {
+        left: 44%;
+      }
+
+@include tablet {
+        bottom: -19%;
+        left: 54%;
+      }
     }
 
     &--air {
@@ -37,6 +46,15 @@
 
       width: Min(4.061vw, 67px);
       height: auto;
+
+@include laptop {
+        left: 56%;
+      }
+
+@include tablet {
+        top: 47%;
+        left: 66%;
+      }
     }
 
     &--ex {
@@ -46,6 +64,15 @@
 
       width: Min(51.515vw, 850px);
       height: auto;
+
+@include laptop {
+        left: 12%;
+      }
+
+@include tablet {
+        top: 14%;
+        left: 22%;
+      }
     }
 
     &--logo {
@@ -57,6 +84,15 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        top: -20%;
+        left: 22%;
+      }
+
+@include laptop {
+        left: 12%;
+      }
     }
 
     &--flex {
@@ -68,6 +104,15 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        top: 47%;
+        left: 22%;
+      }
+
+@include laptop {
+        left: 12%;
+      }
     }
 
     &--mess {
@@ -79,6 +124,15 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        top: 3%;
+        left: 77%;
+      }
+
+@include laptop {
+        left: 67%;
+      }
     }
 
     &--boy {
@@ -89,6 +143,15 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        top: -42%;
+        left: 65%;
+      }
+
+@include laptop {
+        left: 55%;
+      }
     }
 
     &--rs {
@@ -98,6 +161,15 @@
 
       width: Min(7.455vw, 123px);
       height: auto;
+
+@include tablet {
+        top: 57%;
+        left: 79%;
+      }
+
+@include laptop {
+        left: 69%;
+      }
     }
 
     &--kiss {
@@ -107,6 +179,15 @@
 
       width: Min(10vw, 165px);
       height: auto;
+
+@include tablet {
+        top: -5%;
+        left: 53%;
+      }
+
+@include laptop {
+        left: 43%;
+      }
     }
 
     &--boobs {
@@ -118,6 +199,15 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include laptop {
+        left: 39%;
+      }
+
+@include tablet {
+        top: 49%;
+        left: 49%;
+      }
     }
   }
 }

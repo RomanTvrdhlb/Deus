@@ -15,7 +15,13 @@
   }
 
   &--first {
+    max-width: 100%;
+
     grid-gap: clamp(20px, 2.667vw, 44px);
+
+@include mobile {
+      align-items: center;
+    }
   }
 
 
@@ -54,15 +60,23 @@
   &__title {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
     padding-bottom: 3px;
 
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(60px, 4.788vw, 79px);
+    font-size: clamp(50px, 4.788vw, 79px);
     line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-c);
     text-transform: uppercase;
+
+@include mobile {
+      align-items: center;
+
+      text-align: center;
+    }
+
     &--team {
       font-size: clamp(25px, 2.727vw, 45px);
     }
@@ -75,7 +89,7 @@
 
     &-small {
       font-weight: 400;
-      font-size: clamp(52px, 4.364vw, 72px);
+      font-size: clamp(42px, 4.364vw, 72px);
       line-height: 120%;
 
       &--more {

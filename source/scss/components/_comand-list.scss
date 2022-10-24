@@ -10,9 +10,21 @@
     grid-gap: clamp(15px, 1.879vw, 31px);
     grid-template-columns: repeat(2, 1fr);
 
+@include mobile {
+      grid-template-columns: 100%;
+    }
 
     &--three-row {
       grid-template-columns: repeat(3, 1fr);
+
+@include small-tablet {
+        grid-template-columns: repeat(2, 1fr) !important;
+        .comand-list__tab {
+          &:last-child {
+            grid-column: span 2;
+          }
+        }
+      }
     }
 
     &--one-row {
@@ -20,14 +32,26 @@
     }
 
     &--two-row {
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+
+@include small-tablet {
+        grid-template-columns: 100%;
+      }
     }
 
     &--second-row {
-      grid-template-columns: 1.3fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+
+@include small-tablet {
+        grid-template-columns: 100%;
+      }
     }
     &--expand-row {
-      grid-template-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.4fr;
+
+@include small-tablet {
+        grid-template-columns: 100%;
+      }
     }
   }
 
@@ -35,12 +59,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 28px 0;
+    padding: clamp(18px, 1.697vw, 28px) 5px;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: clamp(14px, 1.515vw, 25px);
+    line-height: 140%;
     font-family: var(--font-family);
     text-align: center;
     color: var(--color-s);
