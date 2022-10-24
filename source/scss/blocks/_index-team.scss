@@ -24,9 +24,12 @@
     }
 
 @include tablet {
-      top: 15%;
-      right: -15%;
+      top: 10%;
+      right: -13%;
       left: initial;
+
+      width: 350px;
+      height: 272px;
 
       transform: rotate(90deg);
     }

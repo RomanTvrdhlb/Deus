@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  height: Min(40.061vw, 661px);
+  min-height: Min(36.364vw, 600px);
 
   @keyframes shake {
     from {
