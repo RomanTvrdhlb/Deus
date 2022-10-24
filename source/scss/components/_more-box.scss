@@ -17,6 +17,10 @@
       height: auto;
 
       animation: increase 3.5s infinite alternate;
+
+@include tablet {
+        left: 44%;
+      }
     }
 
     &--apple {
@@ -28,6 +32,10 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        left: 15%;
+      }
     }
 
     &--push {
@@ -38,6 +46,10 @@
       height: auto;
 
       animation: shakeLeft 5s infinite alternate;
+
+@include tablet {
+        left: 25%;
+      }
     }
     &--cube {
       top: 26%;
@@ -48,6 +60,10 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
+
+@include tablet {
+        left: 73%;
+      }
     }
 
     &--market {
@@ -58,6 +74,10 @@
       height: auto;
 
       animation: increase 3.5s infinite alternate;
+
+@include tablet {
+        left: 12%;
+      }
     }
 
     &--aso {
@@ -68,6 +88,10 @@
       height: auto;
 
       animation: shakeLeft 3s infinite alternate;
+
+@include tablet {
+        left: 13%;
+      }
     }
     &--store {
       top: 66%;
@@ -77,6 +101,10 @@
       height: auto;
 
       animation: increase 3s infinite alternate;
+
+@include tablet {
+        left: 50%;
+      }
     }
   }
 }

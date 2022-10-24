@@ -27,13 +27,14 @@
 
 
   &__about {
+    max-width: 500px;
+
     font-style: normal;
     font-weight: 400;
     font-size: clamp(16px, 1.333vw, 22px);
     line-height: normal;
     font-family: var(--font-family);
     color: var(--color-c);
-
 
 
     &--first {
@@ -88,8 +89,14 @@
     }
 
     &--more {
+      max-width: 100%;
+
       font-weight: 900;
       font-size: clamp(25px, 2.727vw, 45px);
+
+@include tablet {
+        max-width: 500px;
+      }
     }
 
 
