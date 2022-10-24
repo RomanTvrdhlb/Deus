@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   width: fit-content  !important;
-  height: 100%;
 
   counter-reset: li;
 
   grid-gap: clamp(10px, 1.576vw, 26px);
-
+  &--text {
+    justify-content: center;
+    height: 100%;
+  }
 
   &__item {
     position: relative;
