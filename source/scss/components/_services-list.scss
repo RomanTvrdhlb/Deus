@@ -27,13 +27,15 @@
     }
 
     &:nth-child(even) {
-      justify-items: end;
       .main-list {
         order: 2;
+        padding-left: 9%;
       }
     }
 
-
+    &--end {
+      justify-items: end;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -262,7 +264,8 @@
 
       width: Min(28.545vw, 471px);
       height: auto;
- animation: increase 3.5s infinite alternate;
+
+      animation: increase 3.5s infinite alternate;
 
 @include tablet {
         top: -49%;
@@ -271,7 +274,7 @@
 
 @include small-tablet {
         left: 21%;
-      } 
+      }
     }
     &--application {
       top: 65%;
@@ -279,7 +282,8 @@
 
       width: Min(30.424vw, 502px);
       height: auto;
- animation: increase 3.5s infinite alternate;
+
+      animation: increase 3.5s infinite alternate;
 
 @include tablet {
         top: 90%;
@@ -288,7 +292,7 @@
 
 @include small-tablet {
         left: 49%;
-      } 
+      }
     }
     &--through {
       top: 23%;
@@ -296,7 +300,8 @@
 
       width: Min(22.485vw, 371px);
       height: auto;
- animation: increase 2.5s infinite alternate;
+
+      animation: increase 2.5s infinite alternate;
 
 @include tablet {
         top: 19%;
@@ -305,7 +310,52 @@
 
 @include small-tablet {
         left: 38%;
-      } 
+      }
+    }
+    &--youtube {
+      top: -22%;
+      left: 9%;
+
+      width: Min(29.697vw, 490px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+    &--twitch {
+      top: -21%;
+      left: 54%;
+
+      width: Min(29.697vw, 490px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+    &--inst {
+      top: 46%;
+      left: 17%;
+
+      width: Min(29.697vw, 490px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+    &--number {
+      top: -32%;
+      left: 15%;
+
+      width: Min(21.03vw, 347px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
+    }
+    &--influencers {
+      top: 35%;
+      left: 4%;
+
+      width: Min(38.97vw, 643px);
+      height: auto;
+
+      animation: increase 2.5s infinite alternate;
     }
   }
 }

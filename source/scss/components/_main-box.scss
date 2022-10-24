@@ -27,8 +27,6 @@
 
 
   &__about {
-    max-width: 500px;
-
     font-style: normal;
     font-weight: 400;
     font-size: clamp(16px, 1.333vw, 22px);
@@ -36,7 +34,13 @@
     font-family: var(--font-family);
     color: var(--color-c);
 
+@include tablet {
+      max-width: 500px;
+    }
 
+    &--team {
+      font-size: clamp(16px, 1.212vw, 20px);
+    }
     &--first {
       font-family: var(--font-family1);
     }
