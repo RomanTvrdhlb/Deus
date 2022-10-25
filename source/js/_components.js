@@ -10,4 +10,5 @@ import './components/getDinamicHeight';
 import './components/select';
 // import './components/tabs';
 import './components/cursor';
+// import './components/parallax';
 

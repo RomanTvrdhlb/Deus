@@ -4,24 +4,24 @@
   width: 100%;
   min-height: Min(36.364vw, 600px);
 
-  @keyframes shake {
-    from {
-      transform: scale(1) rotate(0deg);
-    }
+  // @keyframes shake {
+  //   from {
+  //     transform: scale(1) rotate(0deg);
+  //   }
 
-    to {
-      transform: scale(1.1) rotate(5deg);
-    }
-  }
-  @keyframes shakeLeft {
-    from {
-      transform: scale(1) rotate(0deg);
-    }
+  //   to {
+  //     transform: scale(1.1) rotate(5deg);
+  //   }
+  // }
+  // @keyframes shakeLeft {
+  //   from {
+  //     transform: scale(1) rotate(0deg);
+  //   }
 
-    to {
-      transform: scale(1.1) rotate(-5deg);
-    }
-  }
+  //   to {
+  //     transform: scale(1.1) rotate(-5deg);
+  //   }
+  // }
 
 
   &__img {

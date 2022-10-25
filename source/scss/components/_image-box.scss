@@ -6,22 +6,23 @@
 
 
 
-  @keyframes increase {
-    from {
-      transform: scale(1);
-    }
+  // @keyframes increase {
+  //   from {
+  //     transform: scale(1);
+  //   }
 
-    to {
-      transform: scale(1.05);
-    }
-  }
+  //   to {
+  //     transform: scale(1.05);
+  //   }
+  // }
   &__item {
     position: absolute;
 
 
     &--mark {
-      bottom: -19%;
-      left: 54%;
+      top: initial !important;
+      bottom: -19% !important;
+      left: 54% !important;
       z-index: 6;
 
       width: Min(7.758vw, 128px);
@@ -40,8 +41,8 @@
     }
 
     &--air {
-      top: 47%;
-      left: 66%;
+      top: 47% !important;
+      left: 66% !important;
       z-index: 6;
 
       width: Min(4.061vw, 67px);
@@ -58,8 +59,8 @@
     }
 
     &--ex {
-      top: 14%;
-      left: 22%;
+      top: 14% !important;
+      left: 22% !important;
       z-index: 4;
 
       width: Min(51.515vw, 850px);
@@ -76,8 +77,8 @@
     }
 
     &--logo {
-      top: -20%;
-      left: 22%;
+      top: -20% !important;
+      left: 22% !important;
       z-index: 5;
 
       width: Min(22.121vw, 365px);
@@ -96,8 +97,8 @@
     }
 
     &--flex {
-      top: 47%;
-      left: 22%;
+      top: 47% !important;
+      left: 22% !important;
       z-index: 5;
 
       width: Min(10.061vw, 166px);
@@ -116,8 +117,8 @@
     }
 
     &--mess {
-      top: 3%;
-      left: 77%;
+      top: 3% !important;
+      left: 77% !important;
       z-index: 5;
 
       width: Min(20vw, 330px);
@@ -136,8 +137,8 @@
     }
 
     &--boy {
-      top: -42%;
-      left: 65%;
+      top: -42% !important;
+      left: 65% !important;
 
       width: Min(22.485vw, 371px);
       height: auto;
@@ -155,8 +156,8 @@
     }
 
     &--rs {
-      top: 57%;
-      left: 79%;
+      top: 57% !important;
+      left: 79% !important;
       z-index: 5;
 
       width: Min(7.455vw, 123px);
@@ -173,8 +174,8 @@
     }
 
     &--kiss {
-      top: -5%;
-      left: 53%;
+      top: -5% !important;
+      left: 53% !important;
       z-index: 5;
 
       width: Min(10vw, 165px);
@@ -191,8 +192,8 @@
     }
 
     &--boobs {
-      top: 49%;
-      left: 49%;
+      top: 49% !important;
+      left: 49% !important;
       z-index: 3;
 
       width: Min(19.636vw, 324px);
