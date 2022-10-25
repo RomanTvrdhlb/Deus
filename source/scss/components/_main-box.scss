@@ -6,7 +6,7 @@
 
   grid-gap: clamp(20px, 4.242vw, 70px);
 
-@include mobile {
+@include small-tablet {
     align-items: center;
   }
 
@@ -43,6 +43,10 @@
     }
     &--first {
       font-family: var(--font-family1);
+
+@include small-tablet {
+        text-align: center;
+      }
     }
   }
 
@@ -82,7 +86,7 @@
     color: var(--color-c);
     text-transform: uppercase;
 
-@include mobile {
+@include small-tablet {
       align-items: center;
 
       text-align: center;

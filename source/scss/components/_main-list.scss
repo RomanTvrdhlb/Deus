@@ -1,11 +1,16 @@
 .main-list {
   display: flex;
   flex-direction: column;
-  width: fit-content  !important;
+  width: fit-content;
 
   counter-reset: li;
 
   grid-gap: clamp(10px, 1.576vw, 26px);
+
+@include mobile {
+    padding: 0 !important;
+  }
+
   &--text {
     justify-content: center;
     height: 100%;
