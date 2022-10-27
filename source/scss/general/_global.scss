@@ -17,6 +17,7 @@ body {
   color: var(--color-b);
 
   background-color: var(--body-bg);
+  cursor: url(../../img/cur.png),auto!important;
 
   @include tablet {
     width: 100%;
