@@ -9,6 +9,6 @@ import './components/getDinamicHeight';
 // import './components/lightbox';
 import './components/select';
 // import './components/tabs';
-import './components/cursor';
+// import './components/cursor';
 // import './components/parallax';
 
