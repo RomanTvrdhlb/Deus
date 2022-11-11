@@ -18,7 +18,7 @@
       top: -2%;
       left: -5%;
 
-      width: Min(25.03vw, 413px);
+      width: clamp(123px, 25.337vw, 413px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -28,15 +28,15 @@
       }
 
 @include small-tablet {
-        top: -5%;
-        left: 36%;
+        top: -8%;
+        left: 34%;
       }
     }
     &--lips {
       top: 55%;
       left: -12%;
 
-      width: Min(10.121vw, 167px);
+      width: clamp(55px, 10.245vw, 167px);
       height: auto;
 
       animation: increase 2s infinite alternate;
@@ -47,22 +47,22 @@
       }
 
 @include small-tablet {
-        top: 52%;
-        left: 27%;
+        top: 40%;
+        left: 17%;
       }
     }
     &--collar {
       top: 41%;
       left: 31%;
 
-      width: Min(19.939vw, 329px);
+      width: clamp(102px, 20.184vw, 329px);
       height: auto;
 
       animation: increase 3s infinite alternate;
 
 @include small-tablet {
-        top: 21%;
-        left: 57%;
+        top: 5%;
+        left: 62%;
       }
     }
 

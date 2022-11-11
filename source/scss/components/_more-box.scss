@@ -13,12 +13,13 @@
       top: -1%;
       left: 14%;
 
-      width: Min(31.515vw, 520px);
+      width: clamp(160px, 31.902vw, 520px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
 
 @include tablet {
+        top: -15%;
         left: 44%;
       }
     }
@@ -28,12 +29,13 @@
       left: -5%;
       z-index: 2;
 
-      width: Min(8.303vw, 137px);
+      width: clamp(44px, 8.405vw, 137px);
       height: auto;
 
       animation: increase 2s infinite alternate;
 
 @include tablet {
+        top: -3%;
         left: 15%;
       }
     }
@@ -42,13 +44,14 @@
       top: 21%;
       left: -2%;
 
-      width: Min(28.788vw, 475px);
+      width: clamp(140px, 29.141vw, 475px);
       height: auto;
 
       animation: shakeLeft 5s infinite alternate;
 
 @include tablet {
-        left: 25%;
+        top: 16%;
+        left: 28%;
       }
     }
     &--cube {
@@ -56,12 +59,13 @@
       left: 53%;
       z-index: 2;
 
-      width: Min(16.848vw, 278px);
+      width: clamp(89px, 17.055vw, 278px);
       height: auto;
 
       animation: increase 2s infinite alternate;
 
 @include tablet {
+        top: 19%;
         left: 73%;
       }
     }
@@ -70,7 +74,7 @@
       top: 38%;
       left: -8%;
 
-      width: Min(34.182vw, 564px);
+      width: clamp(162px, 34.601vw, 564px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -84,12 +88,13 @@
       top: 67%;
       left: -7%;
 
-      width: Min(15.697vw, 15.697vw);
+      width: clamp(85px, 15.951vw, 260px);
       height: auto;
 
       animation: shakeLeft 3s infinite alternate;
 
 @include tablet {
+        top: 73%;
         left: 13%;
       }
     }
@@ -97,12 +102,13 @@
       top: 66%;
       left: 30%;
 
-      width: Min(30vw, 495px);
+      width: clamp(144px, 30.368vw, 495px);
       height: auto;
 
       animation: increase 3s infinite alternate;
 
 @include tablet {
+        top: 62%;
         left: 50%;
       }
     }

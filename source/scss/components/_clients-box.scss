@@ -10,10 +10,10 @@
 
 
     &--win {
-      top: -25%;
-      left: -7%;
+      top: -32%;
+      left: -5%;
 
-      width: Min(31.939vw, 527px);
+      width: clamp(152px, 32.331vw, 527px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
@@ -24,16 +24,16 @@
       }
 
 @include small-tablet {
-        top: -64%;
-        left: 15%;
+        top: -75%;
+        left: 13%;
       }
     }
 
     &--circle {
-      top: 9%;
-      left: 5%;
+      top: 13%;
+      left: 7%;
 
-      width: Min(20vw, 330px);
+      width: clamp(110px, 20.245vw, 330px);
       height: auto;
 
       animation: shakeLeft 3.5s infinite alternate;
@@ -44,16 +44,16 @@
       }
 
 @include small-tablet {
-        top: -4%;
-        left: 24%;
+        top: -5%;
+        left: 20%;
       }
     }
     &--hand {
       top: 6%;
-      left: 46%;
+      left: 51%;
       z-index: 3;
 
-      width: Min(21.212vw, 350px);
+      width: clamp(107px, 21.472vw, 350px);
       height: auto;
 
       animation: increase 2s infinite alternate;
@@ -64,16 +64,16 @@
       }
 
 @include small-tablet {
-        top: -22%;
-        left: 50%;
+        top: -30%;
+        left: 55%;
       }
     }
     &--road {
-      top: -11%;
-      right: -8%;
+      top: -16%;
+      right: -14%;
       z-index: 2;
 
-      width: Min(34.909vw, 576px);
+      width: clamp(164px, 35.337vw, 576px);
       height: auto;
 
       animation: shake 4s infinite alternate;
@@ -84,8 +84,8 @@
       }
 
 @include small-tablet {
-        top: -50%;
-        right: 18%;
+        top: -58%;
+        right: 12%;
       }
     }
   }

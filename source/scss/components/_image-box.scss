@@ -24,7 +24,7 @@
       left: 42%;
       z-index: 6;
 
-      width: Min(24.303vw, 401px);
+      width: clamp(120px, 24.601vw, 401px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -37,6 +37,10 @@
         bottom: -19%;
         left: 54%;
       }
+
+@include mobile {
+        bottom: -16%;
+      }
     }
 
     &--air {
@@ -44,7 +48,7 @@
       left: 66%;
       z-index: 6;
 
-      width: Min(4.061vw, 67px);
+      width: clamp(26px, 4.11vw, 67px);
       height: auto;
 
 @include laptop {
@@ -55,6 +59,10 @@
         top: 47%;
         left: 66%;
       }
+
+@include mobile {
+        top: 20%;
+      }
     }
 
     &--ex {
@@ -62,7 +70,7 @@
       left: 22%;
       z-index: 4;
 
-      width: Min(51.515vw, 850px);
+      width: clamp(233px, 52.147vw, 850px);
       height: auto;
 
 @include laptop {
@@ -73,6 +81,10 @@
         top: 14%;
         left: 22%;
       }
+
+@include mobile {
+        top: 0;
+      }
     }
 
     &--logo {
@@ -80,7 +92,7 @@
       left: 22%;
       z-index: 5;
 
-      width: Min(22.121vw, 365px);
+      width: clamp(111px, 22.393vw, 365px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -93,6 +105,11 @@
 @include laptop {
         left: 12%;
       }
+
+@include mobile {
+        top: -30%;
+        left: 8%;
+      }
     }
 
     &--flex {
@@ -100,7 +117,7 @@
       left: 22%;
       z-index: 5;
 
-      width: Min(10.061vw, 166px);
+      width: clamp(61px, 10.184vw, 166px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -113,6 +130,10 @@
 @include laptop {
         left: 12%;
       }
+
+@include mobile {
+        top: 45%;
+      }
     }
 
     &--mess {
@@ -120,7 +141,7 @@
       left: 77%;
       z-index: 5;
 
-      width: Min(20vw, 330px);
+      width: clamp(102px, 20.245vw, 330px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -133,13 +154,17 @@
 @include laptop {
         left: 67%;
       }
+
+@include mobile {
+        top: -28%;
+      }
     }
 
     &--boy {
       top: -42%;
       left: 65%;
 
-      width: Min(22.485vw, 371px);
+      width: clamp(103px, 22.761vw, 371px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -152,6 +177,10 @@
 @include laptop {
         left: 55%;
       }
+
+@include mobile {
+        top: -66%;
+      }
     }
 
     &--rs {
@@ -159,7 +188,7 @@
       left: 79%;
       z-index: 5;
 
-      width: Min(7.455vw, 123px);
+      width: clamp(50px, 7.546vw, 123px);
       height: auto;
 
 @include tablet {
@@ -170,6 +199,11 @@
 @include laptop {
         left: 69%;
       }
+
+@include mobile {
+        top: 43%;
+        left: 73%;
+      }
     }
 
     &--kiss {
@@ -177,7 +211,7 @@
       left: 53%;
       z-index: 5;
 
-      width: Min(10vw, 165px);
+      width: clamp(61px, 10.123vw, 165px);
       height: auto;
 
 @include tablet {
@@ -188,6 +222,10 @@
 @include laptop {
         left: 43%;
       }
+
+@include mobile {
+        top: -25%;
+      }
     }
 
     &--boobs {
@@ -195,7 +233,7 @@
       left: 49%;
       z-index: 3;
 
-      width: Min(19.636vw, 324px);
+      width: clamp(100px, 19.877vw, 324px);
       height: auto;
 
       animation: increase 2s infinite alternate;
@@ -207,6 +245,10 @@
 @include tablet {
         top: 49%;
         left: 49%;
+      }
+
+@include mobile {
+        top: 35%;
       }
     }
   }

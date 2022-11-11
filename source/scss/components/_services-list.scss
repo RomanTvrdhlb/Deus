@@ -26,6 +26,28 @@
       justify-items: start !important;
     }
 
+    &__item {
+      position: relative;
+
+      font-size: 18px;
+
+      background-color: black;
+      &:nth-child(odd) {
+        &:before {
+          opacity: 0;
+        }
+      }
+      &:last-child,
+      :first-child {
+        display: none;
+      }
+      &:not(:first-child) {
+        &:before {
+          content: "";
+        }
+      }
+    }
+
     &:nth-child(even) {
       @include tablet {
         justify-items: end ;
@@ -68,7 +90,7 @@
       top: -40%;
       left: 19%;
 
-      width: Min(16.182vw, 267px);
+      width: clamp(75px, 16.38vw, 267px);
       height: auto;
 
       animation: shake 4s infinite alternate;
@@ -86,7 +108,7 @@
       top: 64%;
       left: -1%;
 
-      width: Min(36.182vw, 597px);
+      width: clamp(190px, 36.626vw, 597px);
       height: auto;
 
       animation: increase 3s infinite alternate;
@@ -96,7 +118,8 @@
       }
 
 @include small-tablet {
-        left: 30%;
+        top: 88%;
+        left: 25%;
       }
     }
     &--target {
@@ -104,7 +127,7 @@
       left: 11%;
       z-index: 2;
 
-      width: Min(25.758vw, 425px);
+      width: clamp(125px, 26.074vw, 425px);
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
@@ -114,14 +137,14 @@
       }
 
 @include small-tablet {
-        left: 23%;
+        left: 15%;
       }
     }
     &--logo {
       top: 30%;
       left: 35%;
 
-      width: Min(29.152vw, 481px);
+      width: clamp(140px, 29.509vw, 481px);
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
@@ -131,15 +154,15 @@
       }
 
 @include small-tablet {
-        top: 37%;
-        left: 43%;
+        top: 55%;
+        left: 47%;
       }
     }
     &--smile {
       top: -40%;
       left: 7%;
 
-      width: Min(13.697vw, 226px);
+      width: clamp(70px, 13.865vw, 226px);
       height: auto;
 
       animation: increase 2s infinite alternate;
@@ -158,7 +181,7 @@
       left: 44%;
       z-index: 3;
 
-      width: Min(20.364vw, 336px);
+      width: clamp(104px, 20.613vw, 336px);
       height: auto;
 
       animation: increase 2s infinite alternate;
@@ -176,7 +199,7 @@
       left: 23%;
       z-index: 2;
 
-      width: Min(23.394vw, 386px);
+      width: clamp(126px, 23.681vw, 386px);
       height: auto;
 
 @include tablet {
@@ -192,7 +215,7 @@
       left: 18%;
       z-index: 2;
 
-      width: Min(24.182vw, 399px);
+      width: clamp(120px, 24.479vw, 399px);
       height: auto;
 
 @include tablet {
@@ -209,7 +232,7 @@
       top: -15%;
       left: 17%;
 
-      width: Min(19.515vw, 322px);
+      width: clamp(100px, 19.755vw, 322px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -220,14 +243,14 @@
 
 @include small-tablet {
         top: -18%;
-        left: 27%;
+        left: 22%;
       }
     }
     &--brand {
       top: -16%;
       left: 64%;
 
-      width: Min(17.576vw, 290px);
+      width: clamp(92px, 17.791vw, 290px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -238,14 +261,14 @@
 
 @include small-tablet {
         top: -22%;
-        left: 49%;
+        left: 53%;
       }
     }
     &--dev {
       top: 38%;
       left: 21%;
 
-      width: Min(36.182vw, 597px);
+      width: clamp(169px, 36.626vw, 597px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
@@ -256,7 +279,7 @@
       }
 
 @include small-tablet {
-        top: 65%;
+        top: 85%;
         left: 29%;
       }
     }
@@ -265,7 +288,7 @@
       top: -12%;
       left: -6%;
 
-      width: Min(28.545vw, 471px);
+      width: clamp(138px, 28.896vw, 471px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -276,14 +299,15 @@
       }
 
 @include small-tablet {
-        left: 21%;
+        top: -60%;
+        left: 15%;
       }
     }
     &--application {
       top: 65%;
       left: 30%;
 
-      width: Min(30.424vw, 502px);
+      width: clamp(146px, 30.798vw, 502px);
       height: auto;
 
       animation: increase 3.5s infinite alternate;
@@ -294,6 +318,7 @@
       }
 
 @include small-tablet {
+        top: 115%;
         left: 49%;
       }
     }
@@ -301,7 +326,7 @@
       top: 23%;
       left: 23%;
 
-      width: Min(22.485vw, 371px);
+      width: clamp(113px, 22.761vw, 371px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
@@ -312,7 +337,7 @@
       }
 
 @include small-tablet {
-        left: 38%;
+        left: 35%;
       }
     }
     &--youtube {
@@ -357,7 +382,7 @@
       top: 46%;
       left: 17%;
 
-      width: Min(29.697vw, 490px);
+      width: clamp(153px, 30.061vw, 490px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
@@ -368,37 +393,39 @@
       }
 
 @include small-tablet {
-        top: 86%;
-        left: 34%;
+        top: 93%;
+        left: 28%;
       }
     }
     &--number {
       top: -32%;
       left: 15%;
 
-      width: Min(21.03vw, 347px);
+      width: clamp(107px, 21.288vw, 347px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
 
 @include tablet {
         top: -46%;
-        left: 39%;
+        left: 35%;
       }
     }
     &--influencers {
       top: 35%;
       left: 4%;
 
-      width: Min(38.97vw, 643px);
+      width: clamp(181px, 39.448vw, 643px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
 
 @include tablet {
-        top: 36%;
-        left: 30%;
+        top: 55%;
+        left: 26%;
       }
+
+      ;
     }
   }
 }

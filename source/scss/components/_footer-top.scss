@@ -6,7 +6,7 @@
   align-items: center;
   padding: 15px 0;
 
-  grid-gap: clamp(10px, 1.818vw, 30px);
+  grid-gap: clamp(20px, 1.818vw, 30px);
 
 @include small-tablet {
     display: grid;
@@ -43,7 +43,7 @@
     }
 
 @include mobile {
-      justify-content: space-around;
+      justify-content: start;
     }
 
     &__link {

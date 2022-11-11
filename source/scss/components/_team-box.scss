@@ -32,7 +32,7 @@
       top: -19%;
       left: 6%;
 
-      width: Min(30.485vw, 503px);
+      width: clamp(160px, 30.859vw, 503px);
       height: auto;
 
       animation: shake 4s infinite alternate;
@@ -52,7 +52,7 @@
       top: 3%;
       left: 15%;
 
-      width: Min(14.182vw, 234px);
+      width: clamp(75px, 14.356vw, 234px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
@@ -61,7 +61,7 @@
       top: 7%;
       left: 51%;
 
-      width: Min(27.212vw, 449px);
+      width: clamp(140px, 27.546vw, 449px);
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
@@ -81,7 +81,7 @@
       top: 28%;
       left: 17%;
 
-      width: Min(28.182vw, 465px);
+      width: clamp(150px, 28.528vw, 465px);
       height: auto;
 
       animation: shake 4s infinite alternate;
@@ -101,7 +101,7 @@
       top: 69%;
       left: 0;
 
-      width: Min(24vw, 396px);
+      width: clamp(130px, 24.294vw, 396px);
       height: auto;
 
       animation: shakeLeft 4s infinite alternate;
@@ -115,7 +115,7 @@
       top: 49%;
       left: 56%;
 
-      width: Min(25.879vw, 427px);
+      width: clamp(140px, 26.196vw, 427px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
