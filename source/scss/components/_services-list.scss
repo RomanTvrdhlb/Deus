@@ -14,7 +14,11 @@
     grid-template-columns: repeat(2, 1fr);
 
 @include tablet {
-      grid-gap: 50px;
+      align-items: center;
+    }
+
+@include mobile {
+      grid-gap: 5px;
       grid-template-columns: 100%;
       .main-list {
         order: 2;
@@ -78,7 +82,7 @@
     position: relative;
 
     width: 100%;
-    min-height: Min(9.697vw, 160px);
+    min-height: clamp(130px, 15.625vw, 160px);
   }
 
   &__img {
@@ -96,10 +100,11 @@
       animation: shake 4s infinite alternate;
 
 @include tablet {
-        left: 60%;
+        top: -10%;
       }
 
-@include small-tablet {
+@include mobile {
+        top: -10%;
         left: 40%;
       }
     }
@@ -113,13 +118,9 @@
 
       animation: increase 3s infinite alternate;
 
-@include tablet {
-        left: 60%;
-      }
-
-@include small-tablet {
-        top: 88%;
-        left: 25%;
+@include mobile {
+        top: 55%;
+        left: 24%;
       }
     }
     &--target {
@@ -132,12 +133,12 @@
 
       animation: shakeLeft 4s infinite alternate;
 
-@include tablet {
-        left: 3%;
-      }
-
 @include small-tablet {
         left: 15%;
+      }
+
+@include mobile {
+        top: 0;
       }
     }
     &--logo {
@@ -149,17 +150,17 @@
 
       animation: shakeLeft 4s infinite alternate;
 
-@include tablet {
-        left: 25%;
+@include small-tablet {
+        top: 60%;
       }
 
-@include small-tablet {
-        top: 55%;
-        left: 47%;
+@include mobile {
+        top: 50%;
+        left: 50%;
       }
     }
     &--smile {
-      top: -40%;
+      top: 4%;
       left: 7%;
 
       width: clamp(70px, 13.865vw, 226px);
@@ -167,17 +168,13 @@
 
       animation: increase 2s infinite alternate;
 
-@include tablet {
-        left: 43%;
-      }
-
-@include small-tablet {
-        top: -30%;
+@include mobile {
+        top: 12%;
         left: 23%;
       }
     }
     &--engine {
-      top: 1%;
+      top: 26%;
       left: 44%;
       z-index: 3;
 
@@ -185,10 +182,6 @@
       height: auto;
 
       animation: increase 2s infinite alternate;
-
-@include tablet {
-        left: 66%;
-      }
 
 @include small-tablet {
         left: 50%;
@@ -202,25 +195,17 @@
       width: clamp(126px, 23.681vw, 386px);
       height: auto;
 
-@include tablet {
-        left: 54%;
-      }
-
 @include small-tablet {
         left: 35%;
       }
     }
     &--search {
-      top: -57%;
+      top: -10%;
       left: 18%;
       z-index: 2;
 
       width: clamp(120px, 24.479vw, 399px);
       height: auto;
-
-@include tablet {
-        left: 49%;
-      }
 
 @include small-tablet {
         left: 30%;
@@ -237,12 +222,8 @@
 
       animation: increase 3.5s infinite alternate;
 
-@include tablet {
-        left: 4%;
-      }
-
-@include small-tablet {
-        top: -18%;
+@include mobile {
+        top: 0;
         left: 22%;
       }
     }
@@ -255,12 +236,8 @@
 
       animation: increase 3.5s infinite alternate;
 
-@include tablet {
-        left: 27%;
-      }
-
-@include small-tablet {
-        top: -22%;
+@include mobile {
+        top: 0;
         left: 53%;
       }
     }
@@ -273,14 +250,13 @@
 
       animation: increase 2.5s infinite alternate;
 
-@include tablet {
-        top: 72%;
-        left: 6%;
+@include small-tablet {
+        top: 63%;
       }
 
-@include small-tablet {
-        top: 85%;
-        left: 29%;
+@include mobile {
+        top: 56%;
+        left: 25%;
       }
     }
 
@@ -293,14 +269,13 @@
 
       animation: increase 3.5s infinite alternate;
 
-@include tablet {
-        top: -49%;
-        left: 46%;
+@include small-tablet {
+        top: -30%;
       }
 
-@include small-tablet {
-        top: -60%;
-        left: 15%;
+@include mobile {
+        top: -5%;
+        left: 10%;
       }
     }
     &--application {
@@ -312,14 +287,13 @@
 
       animation: increase 3.5s infinite alternate;
 
-@include tablet {
-        top: 90%;
-        left: 67%;
+@include small-tablet {
+        top: 95%;
       }
 
-@include small-tablet {
-        top: 115%;
-        left: 49%;
+@include mobile {
+        top: 35%;
+        left: 30%;
       }
     }
     &--through {
@@ -331,51 +305,54 @@
 
       animation: increase 2.5s infinite alternate;
 
-@include tablet {
-        top: 19%;
-        left: 60%;
+@include small-tablet {
+        top: 35%;
       }
 
-@include small-tablet {
-        left: 35%;
+@include mobile {
+        top: 71%;
+        left: 50%;
       }
     }
     &--youtube {
       top: -22%;
       left: 9%;
 
-      width: Min(29.697vw, 490px);
+      width: clamp(140px, 47.852vw, 490px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
 
-@include tablet {
-        top: -30%;
-        left: 1%;
+@include big-desktop {
+        left: 0;
       }
 
-@include small-tablet {
-        top: -43%;
-        left: 12%;
+@include laptop {
+        width: clamp(140px, 23.852vw, 490px);
+      }
+
+@include mobile {
+        top: -3%;
+        left: 5%;
       }
     }
     &--twitch {
       top: -21%;
       left: 54%;
 
-      width: Min(29.697vw, 490px);
+      width: clamp(140px, 47.852vw, 490px);
       height: auto;
 
       animation: increase 2.5s infinite alternate;
 
-@include tablet {
-        top: -30%;
-        left: 34%;
+@include laptop {
+        width: clamp(140px, 23.852vw, 490px);
       }
 
 @include small-tablet {
-        top: -46%;
-        left: 53%;
+        top: -3%;
+        right: 5%;
+        left: initial;
       }
     }
     &--inst {
@@ -388,12 +365,11 @@
       animation: increase 2.5s infinite alternate;
 
 @include tablet {
-        top: 114%;
-        left: 17%;
+        top: 66%;
       }
 
-@include small-tablet {
-        top: 93%;
+@include mobile {
+        top: 60%;
         left: 28%;
       }
     }
@@ -407,8 +383,12 @@
       animation: increase 2.5s infinite alternate;
 
 @include tablet {
-        top: -46%;
-        left: 35%;
+        top: -9%;
+      }
+
+@include mobile {
+        top: 0;
+        left: 34%;
       }
     }
     &--influencers {
@@ -421,11 +401,13 @@
       animation: increase 2.5s infinite alternate;
 
 @include tablet {
-        top: 55%;
-        left: 26%;
+        top: 50%;
       }
 
-      ;
+@include mobile {
+        top: 55%;
+        left: 24%;
+      }
     }
   }
 }

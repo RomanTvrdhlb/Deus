@@ -6,8 +6,15 @@
 
   grid-gap: clamp(20px, 4.242vw, 70px);
 
-@include small-tablet {
+@include tablet {
     align-items: center;
+    max-width: 100%;
+
+    text-align: center;
+
+    br {
+      display: none;
+    }
   }
 
 @include tablet {
@@ -97,14 +104,14 @@
     }
 
     &--team {
-      font-size: clamp(25px, 2.727vw, 45px);
+      font-size: clamp(35px, 2.727vw, 45px);
     }
 
     &--more {
       max-width: 100%;
 
       font-weight: 900;
-      font-size: clamp(25px, 2.727vw, 45px);
+      font-size: clamp(35px, 2.727vw, 45px);
 
 @include tablet {
         max-width: 500px;
