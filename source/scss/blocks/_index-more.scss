@@ -1,14 +1,14 @@
 .index-more {
-  padding: clamp(40px, 11.879vw, 196px) 0 clamp(30px, 11.879vw, 196px);
+  padding: clamp(40px, 11.166vw, 182px) 0;
 
   border-bottom: solid 1px var(--color-c);
   &__box {
     display: grid;
 
+    grid-gap: clamp(30px, 8.221vw, 134px);
     grid-template-columns: repeat(2, 50%);
 
 @include tablet {
-      grid-gap: 20px;
       grid-template-columns: 100%;
     }
   }

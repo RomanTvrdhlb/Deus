@@ -6,6 +6,7 @@
   &__box {
     display: grid;
 
+    grid-gap: clamp(10px, 2.147vw, 35px);
     grid-template-columns: repeat(3, 1fr);
 
 @include small-tablet {

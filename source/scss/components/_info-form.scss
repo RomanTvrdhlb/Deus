@@ -10,11 +10,15 @@
     max-width: 521px;
   }
 
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__label {
     width: 100%;
+
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  &__input {
     min-width: 298px;
     padding: 24px;
 
@@ -22,14 +26,13 @@
     font-size: clamp(18px, 1.515vw, 25px);
     line-height: 100%;
     font-family: var(--font-family);
-    text-align: center;
     color: var(--color-b);
 
+    background: transparent;
     border: solid 1px var(--color-c);
-
-    transition: all 0.4s;
-    &:hover {
-      transform: scale(1.03);
+    &::placeholder {
+      text-align: center;
+      color: var(--color-b);
     }
   }
 }

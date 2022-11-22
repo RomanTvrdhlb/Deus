@@ -1,9 +1,5 @@
 .team-box {
-  position: relative;
-
   width: 100%;
-  min-height: Min(36.364vw, 600px);
-
   // @keyframes shake {
   //   from {
   //     transform: scale(1) rotate(0deg);
@@ -25,110 +21,118 @@
 
 
   &__img {
-    position: absolute;
+    display: flex;
+    justify-content: center;
 
-
-    &--inst {
-      top: -19%;
-      left: 6%;
-
-      width: clamp(160px, 30.859vw, 503px);
-      height: auto;
-
-      animation: shake 4s infinite alternate;
+// position: absolute;
+    height: auto;
+    margin-left: -69px;
 
 @include tablet {
-        top: -30%;
-        left: 6%;
-      }
-
-@include mobile {
-        top: -38%;
-        left: 6%;
-      }
+      margin: 0;
     }
 
-    &--tongue {
-      top: 3%;
-      left: 15%;
+    //     &--inst {
+    //       top: -2%;
+    //       left: 24%;
 
-      width: clamp(75px, 14.356vw, 234px);
-      height: auto;
+    //       width: clamp(160px, 30.859vw, 503px);
+    //       height: auto;
 
-      animation: increase 2.5s infinite alternate;
-    }
-    &--fb {
-      top: 7%;
-      left: 51%;
+    //       animation: shake 4s infinite alternate;
 
-      width: clamp(140px, 27.546vw, 449px);
-      height: auto;
+    // @include tablet {
+    //         top: -30%;
+    //         left: 6%;
+    //       }
 
-      animation: shakeLeft 4s infinite alternate;
+    // @include mobile {
+    //         top: -38%;
+    //         left: 6%;
+    //       }
+    //     }
 
-@include tablet {
-        top: -10%;
-        left: 50%;
-      }
+    //     &--tongue {
+    //       top: 23%;
+    //       left: 4%;
 
-@include mobile {
-        top: -31%;
-        left: 63%;
-      }
-    }
+    //       width: clamp(75px, 14.356vw, 234px);
+    //       height: auto;
 
-    &--tik {
-      top: 28%;
-      left: 17%;
+    //       animation: increase 2.5s infinite alternate;
+    //     }
+    //     &--fb {
+    //       top: 22%;
+    //       left: 43%;
 
-      width: clamp(150px, 28.528vw, 465px);
-      height: auto;
+    //       width: clamp(140px, 27.546vw, 449px);
+    //       height: auto;
 
-      animation: shake 4s infinite alternate;
+    //       animation: shakeLeft 4s infinite alternate;
 
-@include tablet {
-        top: 31%;
-        left: 40%;
-      }
+    // @include tablet {
+    //         top: -10%;
+    //         left: 50%;
+    //       }
 
-@include mobile {
-        top: 13%;
-        left: 40%;
-      }
-    }
+    // @include mobile {
+    //         top: -31%;
+    //         left: 63%;
+    //       }
+    //     }
 
-    &--push {
-      top: 69%;
-      left: 0;
+    //     &--tik {
+    //       top: 71%;
+    //       left: -10%;
 
-      width: clamp(130px, 24.294vw, 396px);
-      height: auto;
+    //       width: clamp(150px, 25.583vw, 417px);
+    //       height: auto;
 
-      animation: shakeLeft 4s infinite alternate;
+    //       animation: shake 4s infinite alternate;
 
-@include tablet {
-        top: 65%;
-        left: 7%;
-      }
-    }
-    &--telegram {
-      top: 49%;
-      left: 56%;
+    // @include tablet {
+    //         top: 31%;
+    //         left: 40%;
+    //       }
 
-      width: clamp(140px, 26.196vw, 427px);
-      height: auto;
+    // @include mobile {
+    //         top: 13%;
+    //         left: 40%;
+    //       }
+    //     }
 
-      animation: increase 2.5s infinite alternate;
+    //     &--push {
+    //       top: 48%;
+    //       left: 30%;
 
-@include tablet {
-        top: 68%;
-        left: 61%;
-      }
+    //       width: clamp(130px, 24.294vw, 396px);
+    //       height: auto;
 
-@include mobile {
-        top: 57%;
-        left: 61%;
-      }
-    }
+    //       animation: shakeLeft 4s infinite alternate;
+
+    // @include tablet {
+    //         top: 65%;
+    //         left: 7%;
+    //       }
+    //     }
+    //     &--telegram {
+    //       top: 72%;
+    //       left: 50%;
+
+    //       width: clamp(140px, 23.374vw, 381px);
+    //       height: auto;
+
+    //       animation: increase 2.5s infinite alternate;
+
+    // @include tablet {
+    //         top: 68%;
+    //         left: 61%;
+    //       }
+
+    // @include mobile {
+    //         top: 57%;
+    //         left: 61%;
+    //       }
+    //     }
   }
 }

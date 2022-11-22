@@ -1,92 +1,96 @@
 .clients-box {
-  position: relative;
+  padding-top: 24px;
 
-  width: 100%;
-  min-height: Min(30.303vw, 500px);
-
+@include tablet {
+    padding: 0;
+  }
 
   &__img {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+    //     position: absolute;
 
 
-    &--win {
-      top: -32%;
-      left: -5%;
+    //     &--win {
+    //       top: -32%;
+    //       left: -5%;
 
-      width: clamp(152px, 32.331vw, 527px);
-      height: auto;
+    //       width: clamp(152px, 32.331vw, 527px);
+    //       height: auto;
 
-      animation: increase 2.5s infinite alternate;
+    //       animation: increase 2.5s infinite alternate;
 
-@include tablet {
-        top: -60%;
-        left: 7%;
-      }
+    // @include tablet {
+    //         top: -60%;
+    //         left: 7%;
+    //       }
 
-@include small-tablet {
-        top: -75%;
-        left: 13%;
-      }
-    }
+    // @include small-tablet {
+    //         top: -75%;
+    //         left: 13%;
+    //       }
+    //     }
 
-    &--circle {
-      top: 13%;
-      left: 7%;
+    //     &--circle {
+    //       top: 13%;
+    //       left: 7%;
 
-      width: clamp(110px, 20.245vw, 330px);
-      height: auto;
+    //       width: clamp(110px, 20.245vw, 330px);
+    //       height: auto;
 
-      animation: shakeLeft 3.5s infinite alternate;
+    //       animation: shakeLeft 3.5s infinite alternate;
 
-@include tablet {
-        top: 24%;
-        left: 19%;
-      }
+    // @include tablet {
+    //         top: 24%;
+    //         left: 19%;
+    //       }
 
-@include small-tablet {
-        top: -5%;
-        left: 20%;
-      }
-    }
-    &--hand {
-      top: 6%;
-      left: 51%;
-      z-index: 3;
+    // @include small-tablet {
+    //         top: -5%;
+    //         left: 20%;
+    //       }
+    //     }
+    //     &--hand {
+    //       top: 6%;
+    //       left: 51%;
+    //       z-index: 3;
 
-      width: clamp(107px, 21.472vw, 350px);
-      height: auto;
+    //       width: clamp(107px, 21.472vw, 350px);
+    //       height: auto;
 
-      animation: increase 2s infinite alternate;
+    //       animation: increase 2s infinite alternate;
 
-@include tablet {
-        top: -4%;
-        left: 65%;
-      }
+    // @include tablet {
+    //         top: -4%;
+    //         left: 65%;
+    //       }
 
-@include small-tablet {
-        top: -30%;
-        left: 55%;
-      }
-    }
-    &--road {
-      top: -16%;
-      right: -14%;
-      z-index: 2;
+    // @include small-tablet {
+    //         top: -30%;
+    //         left: 55%;
+    //       }
+    //     }
+    //     &--road {
+    //       top: -16%;
+    //       right: -14%;
+    //       z-index: 2;
 
-      width: clamp(164px, 35.337vw, 576px);
-      height: auto;
+    //       width: clamp(164px, 35.337vw, 576px);
+    //       height: auto;
 
-      animation: shake 4s infinite alternate;
+    //       animation: shake 4s infinite alternate;
 
-@include tablet {
-        top: -55%;
-        right: 2%;
-      }
+    // @include tablet {
+    //         top: -55%;
+    //         right: 2%;
+    //       }
 
-@include small-tablet {
-        top: -58%;
-        right: 12%;
-      }
-    }
+    // @include small-tablet {
+    //         top: -58%;
+    //         right: 12%;
+    //       }
+    //     }
   }
 }

@@ -2,39 +2,21 @@
   position: relative ;
 
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -11%;
-    right: 0;
 
-    width: 495px;
-    height: 808px;
+  @media (min-width: (1750px)) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16%;
+      left: 0;
 
-    background-image: url(/img/index/img3.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+      width: clamp(100px, 13.672vw, 350px);
+      height: clamp(100px, 22.813vw, 584px);
 
-@include small-tablet {
-      display: none;
-    }
-
-@include big-desktop {
-      width: 255px !important;
-      height: 550px !important;
-    }
-
-@include tablet {
-      top: -8%;
-
-      width: 155px !important;
-      height: 450px !important;
-    }
-
-    @media (max-width: (1850px)) {
-      width: 355px;
-      height: 650px;
+      background-image: url(/img/index/img3.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
     }
   }
 }

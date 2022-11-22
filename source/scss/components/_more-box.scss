@@ -1,116 +1,117 @@
 .more-box {
-  position: relative;
-
   width: 100%;
-  min-height: Min(41.697vw, 688px);
+  padding-top: 50px;
 
-
+@include tablet {
+    padding: 0;
+  }
 
   &__item {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    //     &--samsung {
+    //       top: -1%;
+    //       left: 24%;
 
-    &--samsung {
-      top: -1%;
-      left: 14%;
+    //       width: clamp(160px, 31.902vw, 520px);
+    //       height: auto;
 
-      width: clamp(160px, 31.902vw, 520px);
-      height: auto;
+    //       animation: increase 3.5s infinite alternate;
 
-      animation: increase 3.5s infinite alternate;
+    // @include tablet {
+    //         top: -15%;
+    //         left: 44%;
+    //       }
+    //     }
 
-@include tablet {
-        top: -15%;
-        left: 44%;
-      }
-    }
+    //     &--apple {
+    //       top: 44%;
+    //       left: 74%;
+    //       z-index: 2;
 
-    &--apple {
-      top: 6%;
-      left: -5%;
-      z-index: 2;
+    //       width: clamp(44px, 7.853vw, 128px);
+    //       height: auto;
 
-      width: clamp(44px, 8.405vw, 137px);
-      height: auto;
+    //       animation: increase 2s infinite alternate;
 
-      animation: increase 2s infinite alternate;
+    // @include tablet {
+    //         top: -3%;
+    //         left: 15%;
+    //       }
+    //     }
 
-@include tablet {
-        top: -3%;
-        left: 15%;
-      }
-    }
+    //     &--push {
+    //       top: 21%;
+    //       left: 40%;
 
-    &--push {
-      top: 21%;
-      left: -2%;
+    //       width: clamp(140px, 29.141vw, 475px);
+    //       height: auto;
 
-      width: clamp(140px, 29.141vw, 475px);
-      height: auto;
+    //       animation: shakeLeft 5s infinite alternate;
 
-      animation: shakeLeft 5s infinite alternate;
+    // @include tablet {
+    //         top: 16%;
+    //         left: 28%;
+    //       }
+    //     }
+    //     &--cube {
+    //       top: 10%;
+    //       left: 0;
+    //       z-index: 2;
 
-@include tablet {
-        top: 16%;
-        left: 28%;
-      }
-    }
-    &--cube {
-      top: 26%;
-      left: 53%;
-      z-index: 2;
+    //       width: clamp(89px, 17.055vw, 278px);
+    //       height: auto;
 
-      width: clamp(89px, 17.055vw, 278px);
-      height: auto;
+    //       animation: increase 2s infinite alternate;
 
-      animation: increase 2s infinite alternate;
+    // @include tablet {
+    //         top: 19%;
+    //         left: 73%;
+    //       }
+    //     }
 
-@include tablet {
-        top: 19%;
-        left: 73%;
-      }
-    }
+    //     &--market {
+    //       top: 48%;
+    //       left: 0;
 
-    &--market {
-      top: 38%;
-      left: -8%;
+    //       width: clamp(162px, 33.497vw, 546px);
+    //       height: auto;
 
-      width: clamp(162px, 34.601vw, 564px);
-      height: auto;
+    //       animation: increase 3.5s infinite alternate;
 
-      animation: increase 3.5s infinite alternate;
+    // @include tablet {
+    //         left: 12%;
+    //       }
+    //     }
 
-@include tablet {
-        left: 12%;
-      }
-    }
+    //     &--aso {
+    //       top: 72%;
+    //       left: 66%;
 
-    &--aso {
-      top: 67%;
-      left: -7%;
+    //       width: clamp(85px, 15.521vw, 253px);
+    //       height: auto;
 
-      width: clamp(85px, 15.951vw, 260px);
-      height: auto;
+    //       animation: shakeLeft 3s infinite alternate;
 
-      animation: shakeLeft 3s infinite alternate;
+    // @include tablet {
+    //         top: 73%;
+    //         left: 13%;
+    //       }
+    //     }
+    //     &--store {
+    //       top: 73%;
+    //       left: 0;
 
-@include tablet {
-        top: 73%;
-        left: 13%;
-      }
-    }
-    &--store {
-      top: 66%;
-      left: 30%;
+    //       width: clamp(144px, 29.693vw, 484px);
+    //       height: auto;
 
-      width: clamp(144px, 30.368vw, 495px);
-      height: auto;
+    //       animation: increase 3s infinite alternate;
 
-      animation: increase 3s infinite alternate;
-
-@include tablet {
-        top: 62%;
-        left: 50%;
-      }
-    }
+    // @include tablet {
+    //         top: 62%;
+    //         left: 50%;
+    //       }
+    //     }
   }
 }

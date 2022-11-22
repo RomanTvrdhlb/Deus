@@ -1,37 +1,35 @@
 .index-team {
   position: relative;
 
-  padding: clamp(100px, 22.545vw, 372px) 0 clamp(30px, 9.515vw, 157px);
+  padding: clamp(100px, 20.613vw, 336px) 0 clamp(30px, 9.515vw, 157px);
+  overflow-y: hidden;
 
   border-bottom: solid 1px var(--color-c);
+
+  @include small-tablet {
+    padding: clamp(30px, 9.515vw, 157px) 0;
+  }
   &::before {
     content: "";
     position: absolute;
-    top: -1%;
-    left: 7%;
+    top: -1.5%;
+    left: 33%;
 
     width: 500px;
     height: 272px;
 
     background-image: url(/img/index/logo2.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: contain;
     transform: translate(-1%, 3.5%);
 
-@include small-tablet {
-      display: none;
+@include big-desktop {
+      width: 350px;
     }
 
-@include tablet {
-      top: 10%;
-      right: -13%;
-      left: initial;
-
-      width: 350px;
-      height: 272px;
-
-      transform: rotate(90deg);
+@include small-tablet {
+      display: none;
     }
   }
   &__box {
@@ -40,8 +38,8 @@
     grid-template-columns: 53% 1fr;
 
 @include tablet {
+      grid-gap: 20px;
       grid-template-columns: 100%;
-
       .main-box {
         order: 2;
       }
