@@ -40,7 +40,7 @@
   &__about {
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(16px, 1.333vw, 22px);
+    font-size: clamp(18px, 1.333vw, 22px);
     line-height: normal;
     font-family: var(--font-family);
     color: var(--color-c);
@@ -50,7 +50,7 @@
     }
 
     &--team {
-      font-size: clamp(16px, 1.212vw, 20px);
+      font-size: clamp(18px, 1.212vw, 20px);
     }
     &--first {
       font-family: var(--font-family1);
@@ -64,7 +64,7 @@
   &__social {
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(16px, 1.333vw, 22px);
+    font-size: clamp(18px, 1.333vw, 22px);
     line-height: normal;
     font-family: var(--font-family);
     color: var(--color-b);
@@ -86,7 +86,7 @@
   &__title {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 545px;
     padding-bottom: 3px;
 
     font-style: normal;
@@ -108,7 +108,8 @@
     }
 
     &--more {
-      max-width: 100%;
+      // max-width: 100%;
+      max-width: 595px;
 
       font-weight: 900;
       font-size: clamp(35px, 2.727vw, 45px);

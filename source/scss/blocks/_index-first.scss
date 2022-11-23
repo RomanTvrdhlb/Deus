@@ -1,6 +1,6 @@
 .index-first {
   padding-top: calc(var(--header-height) +  clamp(80px, 12.364vw, 204px));
-  padding-bottom: clamp(30px, 15.212vw, 251px);
+  padding-bottom: clamp(30px, 5.215vw, 85px);
 
   background-position: top left;
   background-size: cover;
@@ -9,7 +9,7 @@
   &__box {
     display: grid;
 
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: auto 1fr;
 
 @include tablet {
       grid-gap: clamp(50px, 9.766vw, 100px);

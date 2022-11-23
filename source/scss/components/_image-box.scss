@@ -17,9 +17,11 @@
   // }
   &__item {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     height: auto;
-    // position: absolute;
+    margin-top: -18%;
+    margin-right: -4%;
+    //     position: absolute;
 
 
     //     &--digital {
