@@ -12,6 +12,7 @@ export default {
   startButton: document.querySelector(".start-button"),
   image: document.querySelector(".our-section__image"),
   customCursor: document.querySelector(".custom-cursor"),
+  firstForm: (".info-form"),
 }
 
 

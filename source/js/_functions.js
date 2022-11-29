@@ -63,11 +63,3 @@ window.addEventListener('load', AOS.refresh)
 //   console.log(e.detail.dir);
 // });
 
-// import { validateForms } from './functions/validate-forms';
-// // const rules1 = [...];
-
-// const afterForm = () => {
-//   console.log('Произошла отправка, тут можно писать любые действия');
-// };
-
-// validateForms('.order-form', rules1, afterForm);

@@ -175,3 +175,16 @@
     order: 3;
   }
 }
+
+.just-validate-error-label {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+
+  width: 100%;
+
+  font-size: 14px;
+  text-align: center;
+
+  transform: translateX(-50%);
+}
