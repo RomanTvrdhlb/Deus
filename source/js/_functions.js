@@ -48,7 +48,9 @@ import { enableScroll } from './functions/enable-scroll';
 
 // Подключение анимаций по скроллу
 import AOS from 'aos';
-AOS.init();
+AOS.init({
+    once: true,
+});
 window.addEventListener('load', AOS.refresh)
 
 // Подключение параллакса блоков при скролле
