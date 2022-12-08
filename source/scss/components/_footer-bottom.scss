@@ -1,13 +1,13 @@
 .footer-bottom {
+
   &__box {
     display: grid;
-
     grid-template-columns: 50%  repeat(2, auto);
-
-@include mobile {
-      grid-template-columns: 100%;
+    @include small-tablet{
+      grid-template-columns: 60% auto;
     }
   }
+
   &__item {
     position: relative;
 
@@ -21,12 +21,15 @@
     line-height: 100%;
     font-family: var(--font-family);
     color: var(--color-b);
+    justify-content: center;
 
-@include mobile {
-      justify-content: center !important;
+    border-left: 1px solid var(--color-b);
 
-      text-align: center;
-      &:not(:last-child) {
+    &:first-child{
+      border: none;
+      justify-content: flex-start;
+      @include small-tablet{
+        grid-column: span 2;
         &::before {
           content: "";
           position: absolute;
@@ -41,18 +44,17 @@
       }
     }
 
-    &:not(:first-child) {
-      justify-content: center;
-
-      border-left: 1px solid var(--color-b);
-
-@include mobile {
-        border: none;
-      }
-    }
-
     &:last-child {
       justify-content: end;
+    }
+
+    @include small-tablet{
+      justify-content: center !important;
+      text-align: center;
+      
+      &:nth-child(2){
+        border: none;
+      }
     }
   }
 }

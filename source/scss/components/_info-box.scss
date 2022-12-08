@@ -8,6 +8,10 @@
     margin-top: 0 ;
   }
 
+  @include small-tablet{
+    order: 2;
+  }
+
   &--right {
     margin-top: -27px;
     padding-right: initial;
@@ -17,9 +21,11 @@
       margin-top: 0 ;
     }
 
-@include mobile {
-      display: none;
+    @include small-tablet{
+      order: 3;
     }
+
+
   }
 
 

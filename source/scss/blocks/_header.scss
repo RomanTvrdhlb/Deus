@@ -14,6 +14,10 @@ header {
   align-items: center;
   width: 100%;
   padding-top: clamp(15px, 1.818vw, 30px);
+
+    @include tablet{
+      padding-top: clamp(15px, 10vw, 90px);
+    }
 }
 
 .logo {

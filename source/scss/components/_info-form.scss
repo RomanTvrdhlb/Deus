@@ -10,6 +10,10 @@
     max-width: 521px;
   }
 
+  @include small-tablet{
+    order: 1;
+  }
+
   &__label {
     position: relative;
 

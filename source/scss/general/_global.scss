@@ -55,7 +55,7 @@ html {
     width: 100%;
     overflow-x: hidden;
   }
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   // @media (min-width: 1240px) and (max-width:1700px) {
   //   zoom: 90%;
   // }
@@ -187,7 +187,7 @@ input[type="number"] {
   margin: 0 auto;
   padding: 0 var(--container-offset);
 
-  @media (min-width: 1240px) and (max-width:1700px) {
+  @media (min-width: 300px) and (max-width:1700px) {
     width: 90vw;
   }
 

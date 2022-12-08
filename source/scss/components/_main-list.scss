@@ -35,12 +35,11 @@
       &::before {
         display: none;
       }
-    }
 
-    &-bold {
-      font-weight: 700;
+      &-bold {
+        font-weight: 700;
+      }
     }
-
 
     &:before {
       content: counter(li, decimal-leading-zero) " ";

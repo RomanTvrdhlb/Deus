@@ -1,5 +1,52 @@
 .index-comand {
+  position: relative;
+
+  max-width: 1630px;
+  margin: 0 auto;
   padding: clamp(30px, 4.727vw, 78px) 0;
 
-  border-bottom: solid 1px var(--color-c);
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -100vw;
+    bottom: 0;
+    left: -100vw;
+
+    height: 1px;
+
+    background-color: var(--color-c);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 1%;
+
+    width: 335px;
+    height: 298px;
+
+    background-image: url(/img/index/enot.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+@include laptop {
+      top: -4%;
+
+      width: 235px;
+      height: 198px;
+    }
+
+@include tablet {
+      width: 185px;
+      height: 148px;
+    }
+
+@include small-tablet {
+      top: -2.5%;
+      right: 0;
+      left: initial;
+    }
+  }
 }

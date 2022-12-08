@@ -6,8 +6,8 @@
 
   border-bottom: solid 1px var(--color-c);
 
-  @include small-tablet {
-    padding: clamp(30px, 9.515vw, 157px) 0;
+  @include tablet {
+    padding: clamp(190px, 43.667vw, 393px) 0 clamp(35px, 10vw, 90px);
   }
   &::before {
     content: "";
@@ -24,12 +24,18 @@
     background-size: contain;
     transform: translate(-1%, 3.5%);
 
-@include big-desktop {
-      width: 350px;
-    }
 
-@include small-tablet {
-      display: none;
+    @include tablet {
+      left: 6%;
+        }
+
+
+        @include small-tablet {
+          width: 350px;
+        }
+
+    @include mobile{
+      width: 300px;
     }
   }
   &__box {
@@ -37,12 +43,13 @@
 
     grid-template-columns: 53% 1fr;
 
-@include tablet {
-      grid-gap: 20px;
+    @include tablet {
+      grid-gap: clamp(50px, 13.889vw, 125px);
       grid-template-columns: 100%;
-      .main-box {
-        order: 2;
-      }
+    }
+
+    @include mobile{
+      grid-gap: clamp(30px, 5.556vw, 50px);
     }
   }
 }

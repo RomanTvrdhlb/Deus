@@ -1,134 +1,146 @@
-.main-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 850px;
-
-  grid-gap: clamp(20px, 4.242vw, 70px);
-
-@include tablet {
-    align-items: center;
-    max-width: 100%;
-
-    text-align: center;
-
-    br {
-      display: none;
-    }
-  }
-
-@include tablet {
-    padding: 0 10px;
-  }
-
-  &--clients {
-    grid-gap: clamp(20px, 4.29vw, 55px);
-  }
-
-  &--first {
-    max-width: 100%;
-
-    grid-gap: clamp(20px, 2.667vw, 44px);
-
-@include mobile {
-      align-items: center;
-    }
-  }
-
-
-
-  &__about {
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(18px, 1.333vw, 22px);
-    line-height: normal;
-    font-family: var(--font-family);
-    color: var(--color-c);
-
-@include tablet {
-      max-width: 500px;
-    }
-
-    &--team {
-      font-size: clamp(18px, 1.212vw, 20px);
-    }
-    &--first {
-      font-family: var(--font-family1);
-
-@include small-tablet {
-        text-align: center;
-      }
-    }
-  }
-
-  &__social {
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(18px, 1.333vw, 22px);
-    line-height: normal;
-    font-family: var(--font-family);
-    color: var(--color-b);
-
-@include tablet {
-      max-width: 630px;
-    }
-  }
-
-  &__seo {
-    color: var(--color-e);
-
-    &--black {
-      font-weight: 700;
-      color: var(--color-c);
-    }
-  }
-
-  &__title {
+  .main-box {
     display: flex;
     flex-direction: column;
-    max-width: 545px;
-    padding-bottom: 3px;
+    width: 100%;
+    max-width: 850px;
+    grid-gap: clamp(20px, 4.242vw, 70px);
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(40px, 4.788vw, 79px);
-    line-height: 120%;
-    font-family: var(--font-family);
-    color: var(--color-c);
-    text-transform: uppercase;
 
-@include small-tablet {
-      align-items: center;
-
-      text-align: center;
+    &--clients {
+      grid-gap: clamp(20px, 4.29vw, 55px);
     }
 
-    &--team {
-      font-size: clamp(35px, 2.727vw, 45px);
+    &--first {
+      max-width: 100%;
+      grid-gap: clamp(20px, 2.667vw, 44px);
     }
 
-    &--more {
-      // max-width: 100%;
-      max-width: 595px;
+    @include tablet {
+      max-width: 100%;
+      grid-gap: clamp(40px, 10vw, 90px);
+    }
 
-      font-weight: 900;
-      font-size: clamp(35px, 2.727vw, 45px);
+    @include mobile{
+      grid-gap: clamp(20px, 3.333vw, 30px);
+    }
 
-@include tablet {
-        max-width: 500px;
+    &__about {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: normal;
+      font-family: var(--font-family);
+      color: var(--color-c);
+      
+      @include tablet {
+        align-self: flex-end;
+        font-size: clamp(15px, 3.889vw, 35px);
+        text-align: start;
+      }
+
+      @include mobile{
+        br{
+          display: none;
+        }
+      }
+
+      &--team {
+        font-size: clamp(18px, 1.212vw, 20px);
+
+        @include tablet{
+          display: none;
+        }
+      }
+
+      &--first {
+        font-family: var(--font-family1);
       }
     }
 
+    &__social {
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(18px, 1.333vw, 22px);
+      line-height: normal;
+      font-family: var(--font-family);
+      color: var(--color-b);
 
-    &-small {
-      font-weight: 400;
-      font-size: clamp(40px, 4.364vw, 72px);
+      @include tablet {
+        max-width: 810px;
+        font-size: clamp(16px, 3.889vw, 35px);
+        br{
+          display: none;
+        }
+      }
+
+    }
+
+    &__seo {
+      color: var(--color-e);
+
+      &--black {
+        font-weight: 700;
+        color: var(--color-c);
+      }
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      max-width: 545px;
+      padding-bottom: 3px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(40px, 4.788vw, 79px);
       line-height: 120%;
+      font-family: var(--font-family);
+      color: var(--color-c);
+      text-transform: uppercase;
+
+      @include tablet {
+        max-width: initial;
+
+        font-size: clamp(35px, 11.333vw, 102px);
+      }
+
+      &--team {
+        font-size: clamp(35px, 2.727vw, 45px);
+
+        @include tablet{
+          font-size: clamp(30px, 8.111vw, 73px);
+        }
+      }
 
       &--more {
+        max-width: 595px;
+
+        font-weight: 900;
+        font-size: clamp(35px, 2.727vw, 45px);
+
+        @include tablet {
+          max-width: 768px;
+          font-size: clamp(20px, 5.778vw, 52px);
+        }
+      }
+
+
+      &-small {
         font-weight: 400;
-        font-size: clamp(25px, 2.727vw, 45px);
+        font-size: clamp(40px, 4.364vw, 72px);
+        line-height: 120%;
+
+        @include tablet {
+          font-size: clamp(35px, 11.333vw, 102px);
+        }
+
+        &--more {
+          font-weight: 400;
+          font-size: clamp(25px, 2.727vw, 45px);
+          @include tablet{
+            font-size: clamp(20px, 5.778vw, 52px);
+          }
+        }
       }
     }
   }
-}

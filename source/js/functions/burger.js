@@ -1,43 +1,34 @@
 import { disableScroll } from '../functions/disable-scroll';
 import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
-import _vars from '../_vars';
+import vars from '../_vars';
+import {toggleCustomClass, removeCustomClass, toggleClassInArray, removeClassInArray} from '../functions/customFunctions'
 
-import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} from '../functions/customFunctions'
-
-let overlay = document.querySelector('[data-overlay]');
-// let mobileMenu = document.querySelector('.mobile-menu');
-
-const burger = document.querySelector('[burger]');
-const mobileMenu = document.querySelector('[mobile-header]');
-
-
-// let burger = document.querySelector('.burger');
-// let burgerActive = document.querySelector('.burger.active');
-// let header = document.querySelector('header');
+const {overlay, burger, mobileMenu} = vars;
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
-  burger.addEventListener('click', function(){
-    mobileMenu.classList.toggle('active');
-    burger.classList.toggle('active');
-    overlay.classList.toggle('active');
-    // addCustomClass(_vars.bodyEl, 'fixed')
-    // headerTag.classList.toggle('active');
-    document.body.classList.toggle('dis-scroll')
-    getHeaderHeight();
+  burger.map( function(btn){
+    btn.addEventListener('click', function(){
+      toggleCustomClass(mobileMenu, 'active');
+      toggleClassInArray(burger, 'active');
+      toggleCustomClass(overlay, 'active');
+      getHeaderHeight();
+
+      if(btn.classList.contains('active')){
+        disableScroll()
+      } else{
+        enableScroll()
+      }
+    })
   })
 }
 
 const hideMenuHandler = function(overlay, mobileMenu, burger) {
-    mobileMenu.classList.remove('active');
-    burger.classList.remove('active');
-    overlay.classList.remove('active');
-    // removeCustomClass(_vars.bodyEl, 'fixed')
-    // headerTag.classList.remove('active');
-    document.body.classList.remove('dis-scroll')
-   
+    removeCustomClass(mobileMenu,'active');
+    removeClassInArray(burger, 'active');
+    removeCustomClass(overlay,'active');
+    enableScroll()
 }
-
 
 if (overlay) {
   mobileMenuHandler(overlay,mobileMenu,burger);
@@ -46,7 +37,6 @@ if (overlay) {
       hideMenuHandler(overlay,mobileMenu,burger)
     }
   });
-  
 }
 
 

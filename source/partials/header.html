@@ -29,8 +29,9 @@
       </nav>
 
       <div class='mobile-header__choice header-choice select'>
+        <input type='hidden' class='select__input' name='lang'>
         <div class='select__header'>
-          <span class='header-choice__current select__current'>Ru</span>
+          <span class='header-choice__current select__current' data-id="1">Ru</span>
           <div class='mobile-header__icon select__icon'>
             <svg width='20' height='12'>
               <use href='img/sprite/sprite.svg#arrow-b'></use>
@@ -39,9 +40,9 @@
         </div>
         <div class='header-choice__body select__body'>
           <ul class='header-choice__wrapp select__wrapp'>
-            <li class='header-choice__item select__item' data-choice='choosen'>Ua</li>
-            <li class='header-choice__item select__item' data-choice='choosen'>Ru</li>
-            <li class='header-choice__item select__item' data-choice='choosen'>En</li>
+            <li class='header-choice__item select__item' data-id="2" data-choice='choosen'>Ua</li>
+            <li class='header-choice__item select__item' data-id="1" data-choice='choosen'>Ru</li>
+            <li class='header-choice__item select__item' data-id="3" data-choice='choosen'>En</li>
           </ul>
         </div>
       </div>
@@ -64,27 +65,28 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Main page</a>
+            <a href="#" class="nav-list__link">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Our services</a>
+            <a href="#" class="nav-list__link">Услуги</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__link">About us</a>
+            <a href="#" class="nav-list__link">О нас</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Our team</a>
+            <a href="#" class="nav-list__link">Команда</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Contact us</a>
+            <a href="#" class="nav-list__link">Связаться с нами</a>
           </li>
         </ul>
       </nav>
 
       <div class='header-choice select'>
+        <input type='hidden' class='select__input' name='lang'>
         <div class='select__header'>
-          <span class='header-choice__current select__current'>Ru</span>
-          <div class='header-choice__icon select__icon'>
+          <span class='header-choice__current select__current' data-id="1">Ru</span>
+          <div class='select__icon'>
             <svg width='20' height='12'>
               <use href='img/sprite/sprite.svg#arrow-b'></use>
             </svg>
@@ -92,17 +94,19 @@
         </div>
         <div class='header-choice__body select__body'>
           <ul class='header-choice__wrapp select__wrapp'>
-            <li class='header-choice__item select__item' data-choice='choosen'>Ua</li>
-            <li class='header-choice__item select__item' data-choice='choosen'>Ru</li>
-            <li class='header-choice__item select__item' data-choice='choosen'>En</li>
+            <li class='header-choice__item select__item' data-id="2" data-choice='choosen'>Ua</li>
+            <li class='header-choice__item select__item' data-id="1" data-choice='choosen'>Ru</li>
+            <li class='header-choice__item select__item' data-id="3" data-choice='choosen'>En</li>
           </ul>
         </div>
       </div>
 
-      <button class="header-burger burger" burger>
+      <button class="header-burger burger" data-burger>
         <span class="burger__line"></span>
       </button>
 
     </div>
   </div>
 </header>
+
+

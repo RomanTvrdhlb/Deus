@@ -1,5 +1,5 @@
 .index-first {
-  padding-top: calc(var(--header-height) +  clamp(80px, 12.364vw, 204px));
+  padding-top: calc(var(--header-height) +  clamp(55px, 12.364vw, 204px));
   padding-bottom: clamp(30px, 5.215vw, 85px);
 
   background-position: top left;
@@ -11,12 +11,16 @@
 
     grid-template-columns: auto 1fr;
 
-@include tablet {
-      grid-gap: clamp(50px, 9.766vw, 100px);
+    @include tablet {
+      grid-gap: clamp(40px, 12.667vw, 114px);
       grid-template-columns: 100%;
       .main-box--first {
         order: 2;
       }
+    }
+
+    @include mobile{
+      grid-gap: clamp(15px, 4.444vw, 40px);
     }
   }
 }

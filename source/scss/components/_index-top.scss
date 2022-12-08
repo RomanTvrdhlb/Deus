@@ -41,6 +41,10 @@
     line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-b);
+
+    @include tablet{
+      font-size: clamp(30px, 5.778vw, 52px);
+    }
   }
 }
 
@@ -57,36 +61,13 @@
 
   padding: 0 0 clamp(30px, 4.061vw, 67px);
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -43%;
-    left: -2%;
-
-    width: 335px;
-    height: 298px;
-
-    background-image: url(/img/index/enot.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-
-@include laptop {
-      width: 235px;
-      height: 198px;
-    }
-
-@include tablet {
-      top: -38%;
-
-      width: 185px;
-      height: 148px;
-    }
-
 @include small-tablet {
-      display: none;
+    align-items: flex-start;
+    p {
+      text-align: start;
     }
   }
+
   &::before {
     display: none;
   }

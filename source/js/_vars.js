@@ -11,8 +11,10 @@ export default {
   video: [...document.querySelectorAll("[data-video]")],
   startButton: document.querySelector(".start-button"),
   image: document.querySelector(".our-section__image"),
-  customCursor: document.querySelector(".custom-cursor"),
   firstForm: (".info-form"),
+  burger: [...document.querySelectorAll('[data-burger]')],
+  mobileMenu: document.querySelector('[mobile-header]'),
+  select: document.querySelectorAll('.select'),
 }
 
 
