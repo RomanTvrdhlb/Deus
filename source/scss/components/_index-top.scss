@@ -49,9 +49,16 @@
 }
 
 .info-top {
-  padding: 0 0 clamp(25px, 2.909vw, 48px);
+  padding: 0;
+
   &::before {
     display: none;
+  }
+
+  .index-top__name{
+    @include tablet{
+      font-size: clamp(28px, 8.111vw, 73px);
+    }
   }
 }
 
@@ -59,15 +66,26 @@
 .comand-top {
   position: relative;
 
-  padding: 0 0 clamp(30px, 4.061vw, 67px);
+  padding: 0;
 
-@include small-tablet {
+  @include tablet {
     align-items: flex-start;
+
+    .index-top__name{
+      max-width: 270px;
+    }
     p {
       text-align: start;
+      max-width: 100%;
+      font-size: clamp(18px, 3.889vw, 35px);
     }
   }
 
+  @include mobile{
+    .index-top__name{
+      max-width: 200px;
+    }
+  }
   &::before {
     display: none;
   }

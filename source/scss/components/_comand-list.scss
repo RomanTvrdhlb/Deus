@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  grid-gap: clamp(20px, 2.303vw, 38px);
+  grid-gap: clamp(16px, 2.303vw, 38px);
 
   &__item {
     display: grid;
@@ -10,14 +10,16 @@
     grid-gap: clamp(15px, 1.879vw, 31px);
     grid-template-columns: repeat(2, 1fr);
 
-@include mobile {
+   
+
+    @include tablet {
       grid-template-columns: 100%;
     }
 
     &--three-row {
       grid-template-columns: repeat(3, 1fr);
 
-@include small-tablet {
+@include tablet {
         grid-template-columns: repeat(2, 1fr) !important;
         .comand-list__tab {
           &:last-child {
@@ -34,7 +36,7 @@
     &--two-row {
       grid-template-columns: 1.5fr 1fr;
 
-@include small-tablet {
+@include tablet {
         grid-template-columns: 100%;
       }
     }
@@ -42,14 +44,14 @@
     &--second-row {
       grid-template-columns: 1.2fr 1fr;
 
-@include small-tablet {
+@include tablet {
         grid-template-columns: 100%;
       }
     }
     &--expand-row {
       grid-template-columns: 1fr 1.4fr;
 
-@include small-tablet {
+@include tablet {
         grid-template-columns: 100%;
       }
     }
@@ -78,11 +80,19 @@
       transform: scale(1.02);
     }
 
+    @include tablet{
+      color: var(--color-b);
+      font-size: clamp(14px, 3.889vw, 35px);
+      padding: clamp(14px, 3.667vw, 33px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline;
+    }
 
     &--green {
       background-color: var(--color-q);
     }
-
     &--aqua {
       background-color: var(--color-w);
     }

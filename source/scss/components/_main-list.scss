@@ -24,12 +24,24 @@
 
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(18px, 1.333vw, 22px);
+    font-size: clamp(16px, 1.333vw, 22px);
     line-height: 125%;
     font-family: var(--font-family);
     text-align: left;
     color: var(--color-c);
     letter-spacing: normal;
+
+    @include tablet{
+      font-size: clamp(18px, 3.889vw, 35px);
+      br{
+        display: none;
+      }
+    }
+    
+    @include mobile{
+      padding-left: 32px;
+    }
+
     &--text {
       padding: 0;
       &::before {
@@ -56,6 +68,7 @@
       transform: translateY(5%);
 
       counter-increment: li;
+
     }
 
     &--orange {

@@ -14,17 +14,11 @@
   border: none;
   cursor: pointer;
 
-  --burger-height: 36px;
-  --burger-line-height: 4px;
-  --burger-width: 54px;
+  --burger-width: 40px;
+  --burger-height: 25px;
+  --burger-line-height: 3px;
   @include for-tablet {
     display: none;
-  }
-
-  @include small-tablet{
-    --burger-width: 40px;
-    --burger-height: 25px;
-    --burger-line-height: 3px;
   }
 
   &::before,

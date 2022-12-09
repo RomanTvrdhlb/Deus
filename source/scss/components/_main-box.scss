@@ -113,10 +113,26 @@
       }
 
       &--more {
-        max-width: 595px;
+        max-width:700px;
 
         font-weight: 900;
-        font-size: clamp(35px, 2.727vw, 45px);
+        font-size: clamp(28px, 2.727vw, 45px);
+
+        @include laptop{
+          max-width: 520px;
+        }
+
+        @include tablet {
+          max-width: 768px;
+          font-size: clamp(20px, 5.778vw, 52px);
+        }
+      }
+
+      &--clients{
+        max-width:100%;
+
+        font-weight: 900;
+        font-size: clamp(28px, 2.727vw, 45px);
 
         @include tablet {
           max-width: 768px;
@@ -135,7 +151,6 @@
         }
 
         &--more {
-          font-weight: 400;
           font-size: clamp(25px, 2.727vw, 45px);
           @include tablet{
             font-size: clamp(20px, 5.778vw, 52px);

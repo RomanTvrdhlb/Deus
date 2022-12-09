@@ -7,12 +7,11 @@
   grid-gap: clamp(25px, 2.182vw, 36px);
 
 @include tablet {
-    max-width: 521px;
-  }
-
-  @include small-tablet{
+    max-width: 700px;
     order: 1;
   }
+
+ 
 
   &__label {
     position: relative;
@@ -39,6 +38,10 @@
     &::placeholder {
       text-align: center;
       color: var(--color-b);
+    }
+
+    @include tablet{
+      font-size: clamp(18px, 4.222vw, 38px);
     }
   }
 }

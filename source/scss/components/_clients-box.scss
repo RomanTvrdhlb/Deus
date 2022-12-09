@@ -1,8 +1,18 @@
 .clients-box {
-  padding-top: 24px;
+  margin-top: 24px;
+  
+  
+  @include big-desktop{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-@include tablet {
+  
+  @include tablet {
     padding: 0;
+    justify-content: flex-start;
   }
 
   &__img {
@@ -10,87 +20,10 @@
     justify-content: center;
     height: auto;
 
-    //     position: absolute;
-
-
-    //     &--win {
-    //       top: -32%;
-    //       left: -5%;
-
-    //       width: clamp(152px, 32.331vw, 527px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: -60%;
-    //         left: 7%;
-    //       }
-
-    // @include small-tablet {
-    //         top: -75%;
-    //         left: 13%;
-    //       }
-    //     }
-
-    //     &--circle {
-    //       top: 13%;
-    //       left: 7%;
-
-    //       width: clamp(110px, 20.245vw, 330px);
-    //       height: auto;
-
-    //       animation: shakeLeft 3.5s infinite alternate;
-
-    // @include tablet {
-    //         top: 24%;
-    //         left: 19%;
-    //       }
-
-    // @include small-tablet {
-    //         top: -5%;
-    //         left: 20%;
-    //       }
-    //     }
-    //     &--hand {
-    //       top: 6%;
-    //       left: 51%;
-    //       z-index: 3;
-
-    //       width: clamp(107px, 21.472vw, 350px);
-    //       height: auto;
-
-    //       animation: increase 2s infinite alternate;
-
-    // @include tablet {
-    //         top: -4%;
-    //         left: 65%;
-    //       }
-
-    // @include small-tablet {
-    //         top: -30%;
-    //         left: 55%;
-    //       }
-    //     }
-    //     &--road {
-    //       top: -16%;
-    //       right: -14%;
-    //       z-index: 2;
-
-    //       width: clamp(164px, 35.337vw, 576px);
-    //       height: auto;
-
-    //       animation: shake 4s infinite alternate;
-
-    // @include tablet {
-    //         top: -55%;
-    //         right: 2%;
-    //       }
-
-    // @include small-tablet {
-    //         top: -58%;
-    //         right: 12%;
-    //       }
-    //     }
+    picture,img{
+      @include tablet{
+        width: 100%;
+      }
+    }
   }
 }

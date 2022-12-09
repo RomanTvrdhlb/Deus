@@ -1,38 +1,13 @@
 .index-clients {
-  position: relative;
-
-  max-width: 1630px;
-  margin: 0 auto;
+ position: relative;
+ 
   padding: clamp(110px, 22.545vw, 372px) 0 clamp(30px, 9.515vw, 157px);
 
 @include tablet {
-    padding: clamp(30px, 9.515vw, 157px) 0;
+    padding: clamp(30px, 10.333vw, 93px) 0;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -0.5%;
-    left: -2%;
-
-    width: 500px;
-    height: 272px;
-
-    background-image: url(/img/index/logo4.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    transform: translate(2%, 1.5%);
-
-@include laptop {
-      width: 400px;
-      height: 210px;
-    }
-
-@include tablet {
-      display: none;
-    }
-  }
+ 
 
   &::after {
     content: "";
@@ -48,13 +23,43 @@
 
   &__box {
     display: grid;
+    position: relative;
 
     grid-gap: clamp(50px, 10.429vw, 170px);
     grid-template-columns: repeat(2, 1fr);
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(clamp(110px, 22.545vw, 372px) * -1);
+      left: 0;
+  
+      width: 500px;
+      height: 272px;
+  
+      background-image: url(/img/index/logo4.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      transform: translateX(-8%);
+  
+  @include laptop {
+        width: 400px;
+        height: 210px;
+      }
+  
+  @include tablet {
+        display: none;
+      }
+    }
+
+@include laptop{
+  grid-template-columns: 100%;
+}
+
 @include tablet {
-      grid-gap: clamp(25px, 3.067vw, 50px);
-      grid-template-columns: 100%;
+      grid-gap: clamp(25px, 14.333vw, 129px);
+      
     }
   }
 }

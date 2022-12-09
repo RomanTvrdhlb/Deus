@@ -3,13 +3,29 @@
 
   border-bottom: solid 1px var(--color-c);
 
-  &__box {
+  @include tablet{
+    padding: clamp(25px, 10vw, 90px) 0;
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 2.909vw, 48px);
+
+    @include tablet{
+      grid-gap: clamp(30px, 11.111vw, 100px);
+    }
+
+  }
+
+  &__inner {
     display: grid;
 
     grid-gap: clamp(10px, 2.147vw, 35px);
     grid-template-columns: repeat(3, 1fr);
 
-@include small-tablet {
+@include tablet {
+      grid-gap: clamp(30px, 6.667vw, 60px);
       grid-template-columns: 100%;
       justify-items: center;
     }

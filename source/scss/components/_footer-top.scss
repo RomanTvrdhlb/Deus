@@ -9,13 +9,13 @@
   grid-gap: clamp(20px, 1.818vw, 30px);
 
   &__burger{
-    @include for-small-tablet{
+    @include for-tablet{
       display: none;
     }
     justify-self: end;
   }
 
-@include small-tablet {
+@include tablet {
     display: grid;
 
     grid-template-columns: auto 1fr;
@@ -38,7 +38,7 @@
   .header-choice {
     display: initial;
 
-@include small-tablet {
+@include tablet {
       display: none;
     }
   }

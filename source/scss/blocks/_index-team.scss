@@ -24,19 +24,14 @@
     background-size: contain;
     transform: translate(-1%, 3.5%);
 
-
-    @include tablet {
-      left: 6%;
-        }
-
-
-        @include small-tablet {
-          width: 350px;
-        }
-
-    @include mobile{
-      width: 300px;
+    @include big-desktop{
+      width: 350px;
     }
+
+        @include tablet {
+          width: clamp(300px, 55.556vw, 500px);
+          left: 6%;
+            }
   }
   &__box {
     display: grid;

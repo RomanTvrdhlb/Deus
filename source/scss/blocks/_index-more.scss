@@ -5,12 +5,12 @@
   &__box {
     display: grid;
 
-    grid-gap: clamp(30px, 8.221vw, 134px);
+    grid-gap: clamp(30px, 2.454vw, 40px);
     grid-template-columns: repeat(2, 50%);
 
-@include tablet {
+@include laptop {
       grid-template-columns: 100%;
-
+      grid-gap: clamp(30px, 3.681vw, 60px);
       .more-box{
         order:2;
       }

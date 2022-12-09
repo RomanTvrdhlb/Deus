@@ -14,16 +14,16 @@
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 
-@include small-tablet {
-      grid-gap: 25px;
+    @include tablet {
+      padding: clamp(40px, 10vw, 90px) 0;
+      grid-gap: clamp(25px, 7.778vw, 70px);
       grid-template-columns: 100%;
       .main-list {
         order: 2;
-        max-width: 550px;
       }
     }
 
-@include mobile {
+    @include tablet {
       justify-items: start !important;
     }
 
@@ -50,31 +50,19 @@
     }
 
     &:nth-child(even) {
-      @include tablet {
-        justify-items: end ;
-      }
-
-      @include small-tablet{
-        justify-items: initial;
-      }
       .main-list {
         order: 2;
         padding-left: 9%;
 
-        @include small-tablet{
+        @include tablet{
           padding-left: 0;
         }
       }
-
-
-
-
-
     }
     &--end {
       justify-items: end;
-
-      @include small-tablet{
+      position: relative;
+      @include tablet{
         justify-items: initial;
       }
     }
@@ -93,21 +81,15 @@
 
 
   &__inner {
-    @include mobile {
-      display: flex;
-      justify-content: center;
+    @include tablet {
+      width: 100%;
     }
   }
 
   &__img {
-    // position: absolute;
     display: flex;
     justify-content: center;
     height: auto;
-
-@include mobile {
-      width: 70%;
-    }
 
     &--end {
       justify-content: flex-end;
@@ -117,128 +99,34 @@
       justify-content: flex-start;
     }
 
-    //     &--seo {
-    //       top: -40%;
-    //       left: 19%;
+    &--inst{
+      justify-content: flex-end;
+      position: relative;
+      @include tablet{
+        justify-content: flex-start;
+        max-width: 80%;
+      }
+      @include small-tablet{
+        max-width: 100%;
+      }
 
-    //       width: clamp(75px, 16.38vw, 267px);
-    //       height: auto;
-
-    //       animation: shake 4s infinite alternate;
-
-    // @include tablet {
-    //         top: -10%;
-    //       }
-
-    // @include mobile {
-    //         top: -10%;
-    //         left: 40%;
-    //       }
-    //     }
-
-    //     &--promo {
-    //       top: 64%;
-    //       left: -1%;
-
-    //       width: clamp(190px, 36.626vw, 597px);
-    //       height: auto;
-
-    //       animation: increase 3s infinite alternate;
-
-    // @include mobile {
-    //         top: 55%;
-    //         left: 24%;
-    //       }
-    //     }
-    //     &--target {
-    //       top: -17%;
-    //       left: 11%;
-    //       z-index: 2;
-
-    //       width: clamp(125px, 26.074vw, 425px);
-    //       height: auto;
-
-    //       animation: shakeLeft 4s infinite alternate;
-
-    // @include small-tablet {
-    //         left: 15%;
-    //       }
-
-    // @include mobile {
-    //         top: 0;
-    //       }
-    //     }
-    //     &--logo {
-    //       top: 30%;
-    //       left: 35%;
-
-    //       width: clamp(140px, 29.509vw, 481px);
-    //       height: auto;
-
-    //       animation: shakeLeft 4s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 60%;
-    //       }
-
-    // @include mobile {
-    //         top: 50%;
-    //         left: 50%;
-    //       }
-    //     }
-    //     &--smile {
-    //       top: 4%;
-    //       left: 7%;
-
-    //       width: clamp(70px, 13.865vw, 226px);
-    //       height: auto;
-
-    //       animation: increase 2s infinite alternate;
-
-    // @include mobile {
-    //         top: 12%;
-    //         left: 23%;
-    //       }
-    //     }
-    //     &--engine {
-    //       top: 26%;
-    //       left: 44%;
-    //       z-index: 3;
-
-    //       width: clamp(104px, 20.613vw, 336px);
-    //       height: auto;
-
-    //       animation: increase 2s infinite alternate;
-
-    // @include small-tablet {
-    //         left: 50%;
-    //       }
-    //     }
-    //     &--traffic {
-    //       top: 61%;
-    //       left: 23%;
-    //       z-index: 2;
-
-    //       width: clamp(126px, 23.681vw, 386px);
-    //       height: auto;
-
-    // @include small-tablet {
-    //         left: 35%;
-    //       }
-    //     }
-    //     &--search {
-    //       top: -10%;
-    //       left: 18%;
-    //       z-index: 2;
-
-    //       width: clamp(120px, 24.479vw, 399px);
-    //       height: auto;
-
-    // @include small-tablet {
-    //         left: 30%;
-    //       }
-    //     }
-
+      &::after{
+        position: absolute;
+        content: "";
+        height: clamp(300px, 64.444vw, 580px);
+        right: -40%;
+        top: 0;
+        transform: translateY(-5%);
+        background-image: url(../img/index/logolist.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      
+        @media (min-width: 769px) and (max-width:1024px) {
+          width: clamp(140px, 31.111vw, 280px);
+        }
+      }
+    }
 
     &--media {
       margin-top: -20px;
@@ -246,52 +134,7 @@
 @include laptop {
         margin: 0;
       }
-
-      //       top: -15%;
-      //       left: 17%;
-
-      //       width: clamp(100px, 19.755vw, 322px);
-      //       height: auto;
-
-      //       animation: increase 3.5s infinite alternate;
-
-      // @include mobile {
-      //         top: 0;
-      //         left: 22%;
-      //       }
     }
-    //     &--brand {
-    //       top: -16%;
-    //       left: 64%;
-
-    //       width: clamp(92px, 17.791vw, 290px);
-    //       height: auto;
-
-    //       animation: increase 3.5s infinite alternate;
-
-    // @include mobile {
-    //         top: 0;
-    //         left: 53%;
-    //       }
-    //     }
-    //     &--dev {
-    //       top: 38%;
-    //       left: 21%;
-
-    //       width: clamp(169px, 36.626vw, 597px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 63%;
-    //       }
-
-    // @include mobile {
-    //         top: 56%;
-    //         left: 25%;
-    //       }
-    //     }
 
     &--promo {
       margin-top: -55px;
@@ -299,156 +142,10 @@
 @include laptop {
         margin: 0;
       }
-
-      //       top: -12%;
-      //       left: -6%;
-
-      //       width: clamp(138px, 28.896vw, 471px);
-      //       height: auto;
-
-      //       animation: increase 3.5s infinite alternate;
-
-      // @include small-tablet {
-      //         top: -30%;
-      //       }
-
-      // @include mobile {
-      //         top: -5%;
-      //         left: 10%;
-      //       }
     }
-    //     &--application {
-    //       top: 65%;
-    //       left: 30%;
 
-    //       width: clamp(146px, 30.798vw, 502px);
-    //       height: auto;
-
-    //       animation: increase 3.5s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 95%;
-    //       }
-
-    // @include mobile {
-    //         top: 35%;
-    //         left: 30%;
-    //       }
-    //     }
-    //     &--through {
-    //       top: 23%;
-    //       left: 23%;
-
-    //       width: clamp(113px, 22.761vw, 371px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 35%;
-    //       }
-
-    // @include mobile {
-    //         top: 71%;
-    //         left: 50%;
-    //       }
-    //     }
-    //     &--youtube {
-    //       top: -22%;
-    //       left: 9%;
-
-    //       width: clamp(140px, 47.852vw, 490px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include big-desktop {
-    //         left: 0;
-    //       }
-
-    // @include laptop {
-    //         width: clamp(140px, 23.852vw, 490px);
-    //       }
-
-    // @include mobile {
-    //         top: -3%;
-    //         left: 5%;
-    //       }
-    //     }
-    //     &--twitch {
-    //       top: -21%;
-    //       left: 54%;
-
-    //       width: clamp(140px, 47.852vw, 490px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include laptop {
-    //         width: clamp(140px, 23.852vw, 490px);
-    //       }
-
-    // @include small-tablet {
-    //         top: -3%;
-    //         right: 5%;
-    //         left: initial;
-    //       }
-    //     }
-    //     &--inst {
-    //       top: 46%;
-    //       left: 17%;
-
-    //       width: clamp(153px, 30.061vw, 490px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: 66%;
-    //       }
-
-    // @include mobile {
-    //         top: 60%;
-    //         left: 28%;
-    //       }
-    //     }
-    //     &--number {
-    //       top: -32%;
-    //       left: 15%;
-
-    //       width: clamp(107px, 21.288vw, 347px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: -9%;
-    //       }
-
-    // @include mobile {
-    //         top: 0;
-    //         left: 34%;
-    //       }
-    //     }
-    // &--influencers {
-    //   margin-top: -27px;
-    //   padding-left: clamp(50px, 9.816vw, 160px);
-    //       top: 35%;
-    //       left: 4%;
-
-    //       width: clamp(181px, 39.448vw, 643px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: 50%;
-    //       }
-
-    // @include mobile {
-    //         top: 55%;
-    //         left: 24%;
-    //       }
-    // }
+    @include tablet{
+      justify-content: center;
+    }
   }
 }

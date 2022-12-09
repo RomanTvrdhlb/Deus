@@ -1,138 +1,21 @@
 .team-box {
   width: 100%;
-  // @keyframes shake {
-  //   from {
-  //     transform: scale(1) rotate(0deg);
-  //   }
+  
 
-  //   to {
-  //     transform: scale(1.1) rotate(5deg);
-  //   }
-  // }
-  // @keyframes shakeLeft {
-  //   from {
-  //     transform: scale(1) rotate(0deg);
-  //   }
-
-  //   to {
-  //     transform: scale(1.1) rotate(-5deg);
-  //   }
-  // }
-
+  @include big-desktop{
+    align-items: center;
+    display: flex;
+  }
 
   &__img {
     display: flex;
     justify-content: center;
 
-// position: absolute;
     height: auto;
     margin-left: -69px;
 
-@include tablet {
+    @media (max-width: (1700px)) {
       margin: 0;
     }
-
-    //     &--inst {
-    //       top: -2%;
-    //       left: 24%;
-
-    //       width: clamp(160px, 30.859vw, 503px);
-    //       height: auto;
-
-    //       animation: shake 4s infinite alternate;
-
-    // @include tablet {
-    //         top: -30%;
-    //         left: 6%;
-    //       }
-
-    // @include mobile {
-    //         top: -38%;
-    //         left: 6%;
-    //       }
-    //     }
-
-    //     &--tongue {
-    //       top: 23%;
-    //       left: 4%;
-
-    //       width: clamp(75px, 14.356vw, 234px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-    //     }
-    //     &--fb {
-    //       top: 22%;
-    //       left: 43%;
-
-    //       width: clamp(140px, 27.546vw, 449px);
-    //       height: auto;
-
-    //       animation: shakeLeft 4s infinite alternate;
-
-    // @include tablet {
-    //         top: -10%;
-    //         left: 50%;
-    //       }
-
-    // @include mobile {
-    //         top: -31%;
-    //         left: 63%;
-    //       }
-    //     }
-
-    //     &--tik {
-    //       top: 71%;
-    //       left: -10%;
-
-    //       width: clamp(150px, 25.583vw, 417px);
-    //       height: auto;
-
-    //       animation: shake 4s infinite alternate;
-
-    // @include tablet {
-    //         top: 31%;
-    //         left: 40%;
-    //       }
-
-    // @include mobile {
-    //         top: 13%;
-    //         left: 40%;
-    //       }
-    //     }
-
-    //     &--push {
-    //       top: 48%;
-    //       left: 30%;
-
-    //       width: clamp(130px, 24.294vw, 396px);
-    //       height: auto;
-
-    //       animation: shakeLeft 4s infinite alternate;
-
-    // @include tablet {
-    //         top: 65%;
-    //         left: 7%;
-    //       }
-    //     }
-    //     &--telegram {
-    //       top: 72%;
-    //       left: 50%;
-
-    //       width: clamp(140px, 23.374vw, 381px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: 68%;
-    //         left: 61%;
-    //       }
-
-    // @include mobile {
-    //         top: 57%;
-    //         left: 61%;
-    //       }
-    //     }
   }
 }

@@ -8,8 +8,10 @@
     margin-top: 0 ;
   }
 
-  @include small-tablet{
+  @include tablet{
+    padding: 0;
     order: 2;
+    width: 100%;
   }
 
   &--right {
@@ -21,8 +23,8 @@
       margin-top: 0 ;
     }
 
-    @include small-tablet{
-      order: 3;
+    @include tablet{
+      display: none;
     }
 
 
@@ -34,95 +36,10 @@
     display: flex;
     justify-content: center;
     height: auto;
-    //     position: absolute;
-
-
-
-    //     &--text {
-    //       top: -2%;
-    //       left: -5%;
-
-    //       width: clamp(123px, 25.337vw, 413px);
-    //       height: auto;
-
-    //       animation: increase 3.5s infinite alternate;
-
-    // @include big-desktop {
-    //         left: 5%;
-    //       }
-
-    // @include small-tablet {
-    //         top: -8%;
-    //         left: 34%;
-    //       }
-    //     }
-    //     &--lips {
-    //       top: 55%;
-    //       left: -12%;
-
-    //       width: clamp(55px, 10.245vw, 167px);
-    //       height: auto;
-
-    //       animation: increase 2s infinite alternate;
-
-    // @include tablet {
-    //         top: 39%;
-    //         left: 1%;
-    //       }
-
-    // @include small-tablet {
-    //         top: 40%;
-    //         left: 17%;
-    //       }
-    //     }
-    //     &--collar {
-    //       top: 41%;
-    //       left: 31%;
-
-    //       width: clamp(102px, 20.184vw, 329px);
-    //       height: auto;
-
-    //       animation: increase 3s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 5%;
-    //         left: 62%;
-    //       }
-    //     }
-
-    //     &--boy {
-    //       top: -4%;
-    //       left: 26%;
-
-    //       width: Min(22.485vw, 371px);
-    //       height: auto;
-
-    //       animation: increase 2.5s infinite alternate;
-
-    // @include tablet {
-    //         top: 0;
-    //         left: 14%;
-    //       }
-
-    // @include small-tablet {
-    //         top: 0;
-    //         left: 7%;
-    //       }
-    //     }
-
-    //     &--mess {
-    //       top: 38%;
-    //       left: 51%;
-
-    //       width: Min(19.091vw, 315px);
-    //       height: auto;
-
-    //       animation: increase 3s infinite alternate;
-
-    // @include small-tablet {
-    //         top: 46%;
-    //         left: 22%;
-    //       }
-    //     }
+        picture, img{
+        @include tablet{
+            width: 100%;
+        }
+      }
   }
 }
