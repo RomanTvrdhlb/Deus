@@ -2,7 +2,10 @@
   --body-bg:#e7e7e7;
 
 
-
+  --header-height: 193px;
+  @media (max-width: (576px)) {
+    --header-height:146px;
+  }
   --content-width: 1630px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
