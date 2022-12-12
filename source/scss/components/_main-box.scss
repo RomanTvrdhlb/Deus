@@ -33,9 +33,7 @@
       color: var(--color-c);
       
       @include tablet {
-        align-self: flex-end;
-        font-size: clamp(15px, 3.889vw, 35px);
-        text-align: start;
+        font-size: clamp(14px, 3.889vw, 35px);
       }
 
       @include mobile{
@@ -46,7 +44,6 @@
 
       &--team {
         font-size: clamp(18px, 1.212vw, 20px);
-
         @include tablet{
           display: none;
         }
@@ -54,6 +51,16 @@
 
       &--first {
         font-family: var(--font-family1);
+        @include tablet{
+          display: flex;
+          align-self: flex-end;
+          text-align: start;
+        }
+        @include mobile{
+          br{
+            display: initial;
+          }
+        }
       }
     }
 
@@ -67,6 +74,7 @@
 
       @include tablet {
         max-width: 810px;
+        font-weight: 400;
         font-size: clamp(16px, 3.889vw, 35px);
         br{
           display: none;
