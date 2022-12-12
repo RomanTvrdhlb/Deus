@@ -50,15 +50,17 @@ html {
   font-size: 16px;
   line-height: normal;
   font-family: var(--font-family);
+  
+  scroll-behavior: smooth;
 
   @include tablet {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: initial !important;
   }
-  // scroll-behavior: smooth;
-  // @media (min-width: 1240px) and (max-width:1700px) {
-  //   zoom: 90%;
-  // }
+  
+
+
 }
 
 *,
@@ -226,6 +228,9 @@ input[type="number"] {
 
   width: 100%;
   overflow: hidden;
+
+  overscroll-behavior: none !important;
+  scroll-behavior: none !important;
 }
 
 * {

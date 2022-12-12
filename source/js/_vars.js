@@ -15,6 +15,7 @@ export default {
   burger: [...document.querySelectorAll('[data-burger]')],
   mobileMenu: document.querySelector('[mobile-header]'),
   select: document.querySelectorAll('.select'),
+  links: [...document.querySelectorAll('.nav-list__link')],
 }
 
 

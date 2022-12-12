@@ -4,7 +4,13 @@ import { getHeaderHeight } from '../functions/header-height';
 import vars from '../_vars';
 import {toggleCustomClass, removeCustomClass, toggleClassInArray, removeClassInArray} from '../functions/customFunctions'
 
-const {overlay, burger, mobileMenu} = vars;
+const {overlay, burger, mobileMenu,links} = vars;
+
+links.map( function(link){
+  link.addEventListener('click', function(e){
+    hideMenuHandler(overlay,mobileMenu,burger);
+  })
+})
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
   burger.map( function(btn){
@@ -38,6 +44,7 @@ if (overlay) {
     }
   });
 }
+
 
 
 
