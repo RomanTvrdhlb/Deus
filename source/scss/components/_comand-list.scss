@@ -4,16 +4,23 @@
 
   grid-gap: clamp(16px, 2.303vw, 38px);
 
+  @include mobile{
+    grid-gap: 5px;
+  }
+
   &__item {
     display: grid;
 
     grid-gap: clamp(15px, 1.879vw, 31px);
     grid-template-columns: repeat(2, 1fr);
 
-   
-
     @include tablet {
       grid-template-columns: 100%;
+    }
+
+    @include mobile{
+      grid-gap: 5px;
+      padding: 0 5px;
     }
 
     &--three-row {
@@ -88,6 +95,11 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       display: inline;
+    }
+
+    @include mobile{
+      font-size: 14px;
+      padding: 8px;
     }
 
     &--green {

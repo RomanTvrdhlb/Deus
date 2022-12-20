@@ -6,6 +6,10 @@
     padding: clamp(30px, 10.444vw, 94px) 0;
   }
 
+  @include mobile{
+    padding: 30px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -48,11 +52,6 @@
 
       transform: translate(-20%, -17%);
   
-  // @include laptop {
-  //       width: 235px;
-  //       height: 198px;
-  //     }
-  
   @include tablet {
         width: clamp(160px, 37.222vw, 335px);
         height: clamp(120px, 33.111vw, 298px);
@@ -60,6 +59,10 @@
         right: 0;
         left: initial;
         transform: translate(15%, -17%);
+      }
+
+      @include mobile{
+        top: calc(30px * -1);
       }
 
     }

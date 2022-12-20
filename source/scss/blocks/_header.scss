@@ -18,6 +18,10 @@ header {
     @include tablet{
       padding-top: clamp(15px, 10vw, 90px);
     }
+
+    @include mobile{
+      padding-top: 35px;
+    }
 }
 
 .logo {
@@ -27,5 +31,9 @@ header {
 
 @include tablet {
     max-width: 87px;
+  }
+
+  @include mobile{
+    max-width: 55px;
   }
 }

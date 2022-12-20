@@ -11,6 +11,10 @@
     order: 1;
   }
 
+  @include mobile{
+    grid-gap: 20px;
+  }
+
  
 
   &__label {
@@ -22,7 +26,13 @@
     &:hover {
       transform: scale(1.01);
     }
+
+    @include mobile{
+      width: 85%;
+    }
   }
+
+
   &__input {
     min-width: 298px;
     padding: 24px;
@@ -42,6 +52,12 @@
 
     @include tablet{
       font-size: clamp(18px, 4.222vw, 38px);
+    }
+
+    @include mobile{
+      font-size: 15px;
+      padding: 12px;
+      min-width: initial;
     }
   }
 }

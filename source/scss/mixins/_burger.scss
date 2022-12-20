@@ -21,6 +21,12 @@
     display: none;
   }
 
+  @include mobile{
+    --burger-width: 21px;
+    --burger-height: 13px;
+    --burger-line-height: 2px;
+  }
+
   &::before,
   &::after {
     content: "";

@@ -33,13 +33,11 @@
 
     @include tablet{
       font-size: clamp(18px, 3.889vw, 35px);
-      br{
-        display: none;
-      }
     }
     
     @include mobile{
       padding-left: 32px;
+      font-size: 14px;
     }
 
     &--text {
@@ -95,6 +93,12 @@
       &::before {
         color: var(--color-m);
       }
+    }
+  }
+
+  &__br{
+    @include for-tablet{
+      display: none;
     }
   }
 }

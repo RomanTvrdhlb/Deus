@@ -1,39 +1,47 @@
 .index-team {
-  position: relative;
+    position: relative;
 
-  padding: clamp(100px, 20.613vw, 336px) 0 clamp(30px, 9.515vw, 157px);
-  overflow-y: hidden;
+    padding: clamp(100px, 20.613vw, 336px) 0 clamp(30px, 9.515vw, 157px);
+    overflow-y: hidden;
 
-  border-bottom: solid 1px var(--color-c);
+    border-bottom: solid 1px var(--color-c);
 
-  @include tablet {
-    padding: clamp(190px, 43.667vw, 393px) 0 clamp(35px, 10vw, 90px);
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: -1.5%;
-    left: 33%;
-
-    width: 500px;
-    height: 272px;
-
-    background-image: url(/img/index/logo2.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    transform: translate(-1%, 3.5%);
-
-    @include big-desktop{
-      width: 350px;
+    @include tablet {
+      padding: clamp(150px, 43.667vw, 393px) 0 clamp(35px, 10vw, 90px);
     }
+    
+    @include mobile{
+      padding: 150px 0 30px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1.5%;
+      left: 33%;
 
-        @include tablet {
-          width: clamp(300px, 55.556vw, 500px);
-          left: 6%;
-            }
-  }
-  &__box {
+      width: 500px;
+      height: 272px;
+
+      background-image: url(/img/index/logo2.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      transform: translate(-1%, 3.5%);
+
+      @include big-desktop{
+        width: 350px;
+      }
+
+      @include tablet {
+      width: clamp(300px, 55.556vw, 500px);
+      left: 6%;
+      }
+
+      @include mobile{
+        width: 200px;
+      }
+    }
+    &__box {
     display: grid;
 
     grid-template-columns: 53% 1fr;
@@ -44,7 +52,7 @@
     }
 
     @include mobile{
-      grid-gap: clamp(30px, 5.556vw, 50px);
+      grid-gap: 50px;
     }
   }
 }

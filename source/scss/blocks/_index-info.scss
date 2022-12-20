@@ -7,6 +7,10 @@
     padding: clamp(25px, 10vw, 90px) 0;
   }
 
+  @include mobile{
+    padding: 32px 0;
+  }
+
   &__box{
     display: flex;
     flex-direction: column;
@@ -14,6 +18,10 @@
 
     @include tablet{
       grid-gap: clamp(30px, 11.111vw, 100px);
+    }
+
+    @include mobile{
+      grid-gap: 30px;
     }
 
   }

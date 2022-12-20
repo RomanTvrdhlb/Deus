@@ -57,6 +57,21 @@
     font-size: clamp(20px, 4.222vw, 38px);
     padding: clamp(28px, 4.778vw, 43px) 117px clamp(28px, 4.778vw, 43px) 45px;
   }
+
+  @include mobile{
+    font-size: 15px;
+    padding: 13px 70px 13px 25px;
+
+    &::after{
+      width: 20px;
+      height: 20px;
+      right: 12px;
+    }
+
+    &::before{
+      right: 43px;
+    }
+  }
 }
 
 .logo {

@@ -8,6 +8,10 @@
 
   grid-gap: clamp(20px, 2.909vw, 48px);
 
+  @include mobile{
+    padding: 15px;
+  }
+
   p {
     max-width: 940px;
 
@@ -19,9 +23,9 @@
     text-align: center;
     color: var(--color-b);
 
-@include big-desktop {
-      max-width: 625px;
-    }
+    @include big-desktop {
+          max-width: 625px;
+        }  
   }
   &::before {
     content: "";
@@ -45,6 +49,10 @@
     @include tablet{
       font-size: clamp(30px, 5.778vw, 52px);
     }
+
+    @include mobile{
+      font-size: 20px;
+    }
   }
 }
 
@@ -58,6 +66,10 @@
   .index-top__name{
     @include tablet{
       font-size: clamp(28px, 8.111vw, 73px);
+    }
+
+    @include mobile{
+      font-size: 28px;
     }
   }
 }
@@ -78,12 +90,17 @@
       text-align: start;
       max-width: 100%;
       font-size: clamp(18px, 3.889vw, 35px);
+
+      @include mobile{
+        font-size: 14px;
+      }  
     }
   }
 
   @include mobile{
     .index-top__name{
       max-width: 200px;
+      font-size: 28px;
     }
   }
   &::before {

@@ -2,6 +2,10 @@
   padding: clamp(40px, 11.166vw, 182px) 0;
 
   border-bottom: solid 1px var(--color-c);
+
+  @include mobile{
+    padding: 40px 0;
+  }
   &__box {
     display: grid;
 

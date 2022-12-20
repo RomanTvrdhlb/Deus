@@ -8,70 +8,74 @@
 
   grid-gap: clamp(20px, 1.818vw, 30px);
 
-  &__burger{
-    @include for-tablet{
-      display: none;
-    }
-    justify-self: end;
-  }
-
-@include tablet {
-    display: grid;
-
-    grid-template-columns: auto 1fr;
-
-    .header-nav{
-      display: none;
-    }
-  }
-
-  .header__logo {
-    @include small-tablet {
-      width: 70px;
-      height: 100%;
+    &__burger{
+      @include for-tablet{
+        display: none;
+      }
+      justify-self: end;
     }
 
-@include mobile {
-      width: 50px;
+    @include tablet {
+        display: grid;
+
+        grid-template-columns: auto 1fr;
+
+        .header-nav{
+          display: none;
+        }
+      }
+    
+    @include mobile{
+      padding: 7px 0;
     }
-  }
-  .header-choice {
-    display: initial;
+      
+    .header__logo {
+      @include small-tablet {
+        width: 70px;
+        height: 100%;
+      }
 
-@include tablet {
-      display: none;
+  @include mobile {
+        width: 50px;
+      }
     }
-  }
-  .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .header-choice {
+      display: initial;
 
-    grid-gap: clamp(5px, 3.333vw, 55px);
-
-@include small-tablet {
-      justify-content: space-around;
+  @include tablet {
+        display: none;
+      }
     }
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-@include mobile {
-      justify-content: start;
+      grid-gap: clamp(5px, 3.333vw, 55px);
+
+  @include small-tablet {
+        justify-content: space-around;
+      }
+
+  @include mobile {
+        justify-content: start;
+      }
+
+      &__link {
+        font-size: clamp(14px, 1.212vw, 20px);
+      }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      right: -100vw;
+      bottom: 0;
+      left: -100vw;
 
-    &__link {
-      font-size: clamp(14px, 1.212vw, 20px);
+      height: 1px;
+
+      background-color: var(--color-c);
     }
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    right: -100vw;
-    bottom: 0;
-    left: -100vw;
-
-    height: 1px;
-
-    background-color: var(--color-c);
-  }
 
 
 }
