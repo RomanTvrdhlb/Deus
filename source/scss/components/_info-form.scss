@@ -19,7 +19,7 @@
 
   &__label {
     position: relative;
-
+    border: solid 1px var(--color-c);
     width: 100%;
 
     transition: all 0.3s;
@@ -44,7 +44,7 @@
     color: var(--color-b);
 
     background: transparent;
-    border: solid 1px var(--color-c);
+    
     &::placeholder {
       text-align: center;
       color: var(--color-b);
