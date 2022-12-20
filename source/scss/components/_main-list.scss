@@ -55,7 +55,7 @@
       content: counter(li, decimal-leading-zero) " ";
       position: absolute;
       left: 0;
-
+      top: 50%;
       font-style: normal;
       font-weight: 800;
       font-size: inherit;
@@ -63,12 +63,17 @@
       text-align: center;
       color: var(--color-g);
 
-      transform: translateY(5%);
+      transform: translateY(-50%);
 
       counter-increment: li;
 
     }
-
+    &--mode{
+      &:before{
+        top: 0;
+        transform: translateY(5%);
+      }
+    }
     &--orange {
       &::before {
         color: var(--color-i);
