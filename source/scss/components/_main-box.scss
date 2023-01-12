@@ -157,6 +157,25 @@
         }
       }
 
+      &--eng{
+        max-width: 750px;
+        font-weight: 900;
+        font-size: clamp(28px, 2.727vw, 45px);
+
+        @include laptop{
+          max-width: 520px;
+        }
+
+        @include tablet {
+          max-width: 768px;
+          font-size: clamp(20px, 5.778vw, 52px);
+        }
+
+        @include mobile{
+          font-size: 20px;
+        }
+      }
+
       &--clients{
         max-width:100%;
 
