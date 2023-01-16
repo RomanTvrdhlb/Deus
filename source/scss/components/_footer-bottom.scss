@@ -5,7 +5,11 @@
     grid-template-columns: 50%  repeat(2, auto);
 
     @include tablet{
-      grid-template-columns: 60% auto;
+      grid-template-columns: 60% auto !important;
+    }
+
+    &--mode{
+     grid-template-columns: repeat(3, auto);
     }
   }
 
@@ -69,6 +73,10 @@
     @include mobile{
       padding: 12px 5px;
       font-size: 9px;
+    }
+
+    &--mode{
+      justify-content: flex-end;
     }
   }
 
